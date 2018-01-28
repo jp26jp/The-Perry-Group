@@ -1,6 +1,6 @@
 ---
 layout: home
-image: 
+image: "/uploads/2018/01/28/kit.jpg"
 menu:
   header:
     identifier: _index
