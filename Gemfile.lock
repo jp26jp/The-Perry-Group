@@ -118,6 +118,8 @@ GEM
       activesupport (~> 4.0)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
+    jekyll-menus (0.6.0)
+      jekyll (~> 3.1)
     jekyll-minimagick (0.0.4)
       jekyll (>= 0.10.0)
       mini_magick (>= 3.3)
@@ -252,6 +254,7 @@ DEPENDENCIES
   github-pages
   jekyll
   jekyll-archives
+  jekyll-menus
   jekyll-minimagick
   jekyll-tagging-related_posts
   json

@@ -15,6 +15,7 @@ sass:
 plugins:
   - jekyll/tagging
   - jekyll-tagging-related_posts
+  - jekyll-menus
 #  - jekyll-minimagick
 
 # Social
@@ -35,3 +36,4 @@ defaults:
      layout: "posts"
      shortname: museseo
      permalink: /blog/:title/
+     menus: header

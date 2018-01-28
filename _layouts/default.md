@@ -9,7 +9,13 @@ layout: null
   </head>
 
   <body>
-  {{content}}
+    <header>
+      <nav>
+        {% include navigation.html %}
+      </nav>
+    </header>
+
+    {{content}}
   </body>
 
 </html>
