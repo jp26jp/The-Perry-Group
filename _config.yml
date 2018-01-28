@@ -36,4 +36,4 @@ defaults:
      layout: "posts"
      shortname: museseo
      permalink: /blog/:title/
-     menus: header
+#     menus: header
