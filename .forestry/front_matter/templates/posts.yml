@@ -1,6 +1,4 @@
 ---
-pages:
-- _posts/bob.md
 hide_body: false
 fields:
 - name: layout
