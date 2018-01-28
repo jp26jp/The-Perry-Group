@@ -12,11 +12,3 @@ redcarpet:
     extensions: ["strikethrough", "no_intra_emphasis", "with_toc_data", "lax_spacing", "highlight", "hard_wrap", "underline", "prettify"]
 sass:
     sass_dir: _sass
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "posts"
