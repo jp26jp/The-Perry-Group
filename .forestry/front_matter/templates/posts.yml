@@ -6,3 +6,8 @@ fields:
   type: text
   hidden: false
   default: posts
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
