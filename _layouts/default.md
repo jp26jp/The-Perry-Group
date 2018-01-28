@@ -1,6 +1,7 @@
 ---
 layout: null
 ---
+{% assign siteURL = "https://jp26jp.github.io/The-Perry-Group" %}
 <!DOCTYPE HTML>
 <html>
 
@@ -23,7 +24,7 @@ layout: null
       <div id="caption"></div>
     </div>
 
-    <script src="/js/script.js"></script>
+    <script src="{{ siteURL }}/js/script.js"></script>
   </body>
 
 
