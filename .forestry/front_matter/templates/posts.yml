@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/2018-01-26-welcome-to-jekyll.markdown
 hide_body: false
 fields:
 - name: layout
