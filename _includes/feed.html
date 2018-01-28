@@ -1,0 +1,4 @@
+{% assign siteURL = "https://jp26jp.github.io/The-Perry-Group" %}
+{% for post in site.posts %}
+  <h2><a href="{{ siteURL }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+{% endfor %}
