@@ -13,3 +13,6 @@ fields:
   label: title
   config:
     required: true
+- type: file
+  name: banner
+  label: banner
