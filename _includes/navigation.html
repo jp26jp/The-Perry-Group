@@ -3,7 +3,11 @@
 {% for item in site.menus.header %}
   <li class="menu-item-{{ loop.index }}">
     <a href="{{ item.url }}" title="Go to {{ item.title }}">
-      <img src="{{siteURL}}/uploads/defaults/icons/home-gray.svg" />
+      <i class="material-icons">{{ item.title | downcase }}</i>
+      {{ item.title }}
+    </a>
+    <a href="{{ item.url }}" title="Go to {{ item.title }}">
+      <i class="material-icons">{{ item.title | downcase }}</i>
       {{ item.title }}
     </a>
   </li>
