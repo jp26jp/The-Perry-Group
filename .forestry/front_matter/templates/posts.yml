@@ -1,7 +1,7 @@
 ---
 pages:
 - contact.md
-- _posts/blog.md
+- _posts/2018-01-28-blog.md
 hide_body: false
 fields:
 - type: text
