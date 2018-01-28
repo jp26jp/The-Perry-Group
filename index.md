@@ -1,5 +1,6 @@
 ---
 layout: home
+image: 
 menu:
   header:
     identifier: _index
@@ -7,4 +8,3 @@ menu:
     weight: 1
     title: Home
 ---
-{% include feed.html %}

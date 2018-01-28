@@ -7,6 +7,7 @@ layout: default
     <img src="{{ siteURL }}{{ page.image }}" />
   </div>
   <div id="main-content" class="halves">
+    {% include feed.html %}
     {{ content }}
   </div>
 </div>
