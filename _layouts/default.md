@@ -26,7 +26,7 @@ layout: null
     <img src="/assets/main.jpg" />
   </div>
   <div id="main-content" class="halves">
-    <h1>{{ page.title }}</h1>
+    <h1>{{ post.title }}</h1>
     {{content}}
   </div>
 </div>
