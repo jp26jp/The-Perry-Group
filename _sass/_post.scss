@@ -1,4 +1,6 @@
 #container {
+  width: calc(100% - #{$menu_width});
+
   .halves {
     display: block;
     padding: $spacing * 2.5;
@@ -12,6 +14,12 @@
     background-color: white;
     z-index: 1;
     box-shadow: 0 0 10px #000;
+
+    p img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
   }
 
   #main-image {
@@ -27,6 +35,36 @@
       top: 50%;
       left: 50%;
       transform: translate3d(-50%,-50%,0);
+    }
+  }
+}
+
+#author {
+  width: 100%;
+  height: 50px;
+  color: gray;
+  text-align: center;
+  margin: $spacing 0;
+
+  #author-image,
+  #author-name,
+  .author-name {
+    display: inline-block;
+  }
+
+  #author-image {
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: $spacing / 2;
+  }
+
+  .author-name {
+    line-height: 50px;
+    vertical-align: bottom;
+
+    #author-name {
+      color: black;
     }
   }
 }

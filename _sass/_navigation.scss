@@ -1,8 +1,9 @@
-nav {
-  width: 30px;
+#nav {
+  width: $menu_width;
   height: 100%;
   position: fixed;
-  background: black;
-  opacity: .5;
-  z-index: 1;
+  background: #fff;
+  border-left: 1px solid #eee;
+  z-index: 2;
+  right: 0;
 }
