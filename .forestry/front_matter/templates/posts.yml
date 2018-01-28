@@ -14,7 +14,7 @@ fields:
   config:
     required: true
 - type: file
-  name: banner
-  label: banner
+  name: image
+  label: image
   config:
     required: true

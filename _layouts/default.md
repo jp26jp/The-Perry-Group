@@ -3,24 +3,13 @@ layout: null
 ---
 <!DOCTYPE HTML>
 <html>
-<head>
-  <meta charset="utf-8"/>
-  <title></title>
 
+  <head>
+    {% include head.html %}
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <body>
+  {{content}}
+  </body>
 
-
-  <!-- Styling -->
-  <style>
-  {% capture include_to_scssify %}
-  {% include _main.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
-  </style>
-
-</head>
-<body>
-{{content}}
-</body>
 </html>

@@ -1,0 +1,58 @@
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=0">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{ site.idGoogleTagManager }}');</script>
+
+<!-- Generic -->
+<title>{{ page.title }}</title>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+
+<!-- Favicons -->
+{% include head/favicons.html %}
+
+<!-- Domain Verification -->
+{% include head/verification.html %}
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<!-- <meta property="article:author" content="https://www.facebook.com/512654094" /> -->
+<meta property="article:published_time" content="{{ page.datePublished | date_to_xmlschema }}" />
+<meta property="article:modified_time" content="{{ page.dateModified | date_to_xmlschema }}" />
+<!-- <meta property="article:publisher" content="https://www.facebook.com/267952986717199" /> -->
+<!-- <meta property="fb:pages" content="267952986717199" /> -->
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+<!-- <meta property="fb:profile_id" content="512654094" /> -->
+<!-- <meta property="fb:app_id" content="678450902204056" /> -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ site.twitter }}">
+<meta name="twitter:creator" content="@{{ site.twitter }}">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
+
+<script>{% include js/youtube.js %}</script>
+
+<!-- OneSignal -->
+{% include head/onesignal.html %}
+
+<!-- Styling -->
+<style>
+{% capture include_to_scssify %}{% include _main.scss %}{% endcapture %}
+{{ include_to_scssify | scssify }}
+</style>
