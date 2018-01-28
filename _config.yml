@@ -6,9 +6,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-    extensions: ["strikethrough", "no_intra_emphasis", "with_toc_data", "lax_spacing", "highlight", "hard_wrap", "underline", "prettify"]
 sass:
     sass_dir: _sass
 
