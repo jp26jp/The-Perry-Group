@@ -21,9 +21,9 @@ fields:
     source:
       type: custom
     options:
-        - "Michael Perry"
-        - "Mason Conley"
-        - "Tim Leary"
+    - Michael Perry
+    - Mason Conley
+    - Tim Leary
 - type: file
   name: image
   label: image
