@@ -1,4 +1,5 @@
 #nav {
+  padding-top: $spacing;
   width: $menu_width;
   height: 100%;
   position: fixed;
@@ -6,4 +7,17 @@
   border-left: 1px solid #eee;
   z-index: 2;
   right: 0;
+
+  li {
+    text-align: center;
+    a {
+      text-transform: uppercase;
+      color: gray;
+    }
+  }
+
+  img {
+    width: 30px;
+
+  }
 }

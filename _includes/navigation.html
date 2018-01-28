@@ -1,8 +1,9 @@
+{% assign siteURL = "https://jp26jp.github.io/The-Perry-Group" %}
 <ul>
 {% for item in site.menus.header %}
   <li class="menu-item-{{ loop.index }}">
     <a href="{{ item.url }}" title="Go to {{ item.title }}">
-      <img src="http://theperry.group/uploads/defaults/icons/home.svg" />
+      <img src="{{siteURL}}/uploads/defaults/icons/home-gray.svg" />
       {{ item.title }}
     </a>
   </li>
