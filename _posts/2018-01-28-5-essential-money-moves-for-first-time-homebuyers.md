@@ -5,7 +5,7 @@ permalink: "/blog/:title/"
 title: 5 essential money moves for first-time homebuyers
 date: 2018-01-28 11:35:46 +0000
 author: Michael Perry
-image: "/uploads/2018/01/28/26731568_1799335336766396_8736800370329753259_n.jpg"
+image: "/uploads/2018/01/28/kit.jpg"
 ---
 You’ve decided to go for it. [You know rates are at attractive lows.](https://www.bankrate.com/mortgage.aspx)
 
