@@ -5,15 +5,13 @@ permalink: "/blog/:title/"
 title: 5 essential money moves for first-time homebuyers
 date: 2018-01-28 11:35:46 +0000
 author: Michael Perry
-image: "/uploads/2018/01/28/kit.jpg"
+image: "/uploads/2018/01/28/26731568_1799335336766396_8736800370329753259_n.jpg"
 ---
 You’ve decided to go for it. [You know rates are at attractive lows.](https://www.bankrate.com/mortgage.aspx)
 
 Buying a home can be thrilling and nerve-wracking at the same time, especially for a first-time homebuyer — it’s difficult to know exactly what to expect. The learning curve can be steep, but most of the issues can be resolved by doing a little financial homework.
 
 Take these five steps to help make the process go more smoothly.
-
-## 1. Check your credit
 
 The homebuyer’s credit score is among the most important factors when it comes to qualifying for a loan these days.
 
