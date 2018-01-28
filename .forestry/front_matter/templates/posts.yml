@@ -1,8 +1,7 @@
 ---
 pages:
 - contact.md
-- _posts/2018-01-28-an-awesome-title.md
-- _posts/2018-01-27-fred.md
+- _posts/2018-01-28-blog.md
 hide_body: false
 fields:
 - type: text
