@@ -6,7 +6,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: posts
 - type: text
   name: title
@@ -16,3 +16,5 @@ fields:
 - type: file
   name: banner
   label: banner
+  config:
+    required: true
