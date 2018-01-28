@@ -13,6 +13,18 @@ fields:
   label: title
   config:
     required: true
+- type: select
+  name: author
+  label: Author
+  description: Select an author
+  hidden: false
+  config:
+    source:
+      type: custom
+    options:
+        - "Michael Perry"
+        - "Mason Conley"
+        - "Tim Leary"
 - type: file
   name: image
   label: image
