@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-{% assign siteURL = "https://jp26jp.github.io/The-Perry-Group" %}
+{% assign siteURL = "http://theperry.group" %}
 <!DOCTYPE HTML>
 <html>
 

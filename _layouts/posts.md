@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign siteURL = "https://jp26jp.github.io/The-Perry-Group" %}
+{% assign siteURL = "http://theperry.group" %}
 <div id="container" class="clearfix">
   <div id="main-image" class="halves">
     <img src="{{ siteURL }}{{ page.image }}" />
