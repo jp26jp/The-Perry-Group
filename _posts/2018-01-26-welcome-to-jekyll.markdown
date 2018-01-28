@@ -1,8 +1,12 @@
 ---
-title:  "Welcome to Jekyll!"
-banner: /assets/main.jpg
+layout: post
+title: Welcome to Jekyll!
+date: 2018-01-26 09:05:11 -0700
 categories: jekyll update
+banner: "/assets/main.jpg"
 ---
+# Luxurious Decathlon Champion Pencil
+
 Admiral smashing good fun circus strongman stiff upper lip et sodales cum, nigel mansell lipwig circus strongman smashing good fun burt reynolds et sodales cum stiff upper lip admiral, stiff upper lip lipwig admiral charming villain circus strongman smashing good fun et sodales cum nigel mansell brush burt reynolds marquess of queensbury?
 
 > “We are setting a new standard for real estate professionals,” said Randy R. Park of KW Westfield Keller Williams Real Estate.
