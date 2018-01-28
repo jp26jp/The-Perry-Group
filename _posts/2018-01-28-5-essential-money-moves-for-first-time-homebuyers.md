@@ -13,8 +13,7 @@ Buying a home can be thrilling and nerve-wracking at the same time, especially f
 
 Take these five steps to help make the process go more smoothly.
 
-##   
-1\. Check your credit
+## 1. Check your credit
 
 The homebuyer’s credit score is among the most important factors when it comes to qualifying for a loan these days.
 
@@ -36,7 +35,6 @@ A first-time homebuyer should have a good idea of what is owed and what is comin
 
 “You should understand a little bit about monthly cash flow,” Winesburg says.
 
-  
 “If I were a first-time homebuyer and I wanted to do everything right, I would probably try to track my spending for a couple of months to see where my money was going,” he says.
 
 Additionally, buyers should have an idea of how lenders will view their income, and that requires becoming familiar with the basics of mortgage lending.
