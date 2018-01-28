@@ -10,6 +10,7 @@
 
   li {
     text-align: center;
+    padding: 0 0 $spacing;
     a {
       text-transform: uppercase;
       text-decoration: none;
@@ -18,9 +19,11 @@
     }
   }
 
-  .material-icons {
+  .menu-icon {
     font-size: $spacing;
     display: block;
-    margin: auto;
+
   }
+
+
 }
