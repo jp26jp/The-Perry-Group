@@ -21,14 +21,6 @@ layout: null
 
 </head>
 <body>
-<div id="container" class="clearfix">
-  <div id="main-image" class="halves">
-    <img src="/assets/main.jpg" />
-  </div>
-  <div id="main-content" class="halves">
-    <h1>{{ post.title }}</h1>
-    {{content}}
-  </div>
-</div>
+{{content}}
 </body>
 </html>
