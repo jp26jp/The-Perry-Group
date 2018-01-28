@@ -10,7 +10,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     <div id="author">
       <img id="author-image" src="{{ siteURL }}/uploads/defaults/authors/{{ page.author | downcase | replace:' ','-' }}.jpg"/>
-      <div class="author-name">by <div id="author-name">{{ page.author }}</div></div>
+      <div class="author-name">by <div id="author-name"><a href="{{ siteURL }}/{{ page.author | downcase | replace:' ','-' }}/" title="View all posts by {{ page.author }}">{{ page.author }}</a></div></div>
     </div>
     {{ content }}
   </div>

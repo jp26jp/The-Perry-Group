@@ -7,7 +7,7 @@ layout: default
     <img src="{{ siteURL }}{{ page.image }}" />
   </div>-->
   <div id="main-content" class="halves feed home">
-    {% include feed.html author=nil %}
+    {% include feed.html author=page.title %}
     {{ content }}
   </div>
 </div>
