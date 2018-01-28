@@ -1,3 +1,4 @@
+{% assign siteURL = "https://jp26jp.github.io/The-Perry-Group" %}
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=0">
@@ -12,10 +13,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Generic -->
 <title>{{ page.title }}</title>
 <meta name="robots" content="index,follow"/>
-<link rel="canonical" href="http://theperry.group{{ page.url }}">
+<link rel="canonical" href="{{ siteURL }}{{ page.url }}">
 <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
 
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://theperry.group/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ siteURL }}/feed.xml" />
 
 <!-- Favicons -->
 {% include head/favicons.html %}
@@ -31,10 +32,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- <meta property="article:publisher" content="https://www.facebook.com/267952986717199" /> -->
 <!-- <meta property="fb:pages" content="267952986717199" /> -->
 <meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:url" content="http://theperry.group{{ page.url }}">
+<meta property="og:url" content="{{ siteURL }}{{ page.url }}">
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
-<meta property="og:image" content="http://theperry.group{{ page.image }}" />
+<meta property="og:image" content="{{ siteURL }}{{ page.image }}" />
 <!-- <meta property="fb:profile_id" content="512654094" /> -->
 <!-- <meta property="fb:app_id" content="678450902204056" /> -->
 
@@ -44,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:creator" content="@{{ site.twitter }}">
 <meta name="twitter:title" content="{{ page.title }}">
 <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
-<meta name="twitter:image" content="http://theperry.group{{ page.image }}" />
+<meta name="twitter:image" content="{{ siteURL }}{{ page.image }}" />
 
 <script>{% include js/youtube.js %}</script>
 
