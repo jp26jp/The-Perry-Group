@@ -1,0 +1,31 @@
+#related {
+  margin-top: $spacing * 2;
+  article {
+    border-top: 1px solid #f5f5f5;
+    header {
+      height: $spacing * 2.5;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin: $spacing 0;
+
+      img {
+        width: 25%;
+        height: auto;
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing;
+  }
+  h3, h4 {
+    margin: 0;
+    width: 75%;
+    padding-right: $spacing / 3;
+    a {
+      border-bottom: 0;
+    }
+  }
+
+}

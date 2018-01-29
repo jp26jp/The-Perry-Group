@@ -7,15 +7,27 @@ layout: default
   </div>
   <div id="main-content" class="halves post">
     <h1>{{ page.title }}</h1>
-    <div id="author">
-      <img id="author-image" src="/uploads/defaults/authors/{{ page.author | downcase | replace:' ','-' }}.jpg"/>
-      <div class="author-name">by <div id="author-name"><a href="/{{ page.author | downcase | replace:' ','-' }}/" title="View all posts by {{ page.author }}">{{ page.author }}</a></div></div>
-    </div>
+
+    {% include author.html %}
+
     {{ content }}
-    <ul>
-      {% for related_post in site.related_posts limit: 5 %}
-        <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
-      {% endfor %}
-    </ul>
+
+    {% include author.html %}
+
+    {% comment %}{% include disqus.html identifier=page.url %}{% endcomment %}
+
+    <aside id="related">
+      <h2>You might also like</h2>
+        {% for related_post in site.related_posts limit: 2 %}
+        <article>
+          <header>
+            <h4><a href="{{ related_post.url }}">{{ related_post.title }}</a></h4>
+            <img src="{{ related_post.image }}" />
+          </header>
+        </article>
+        {% endfor %}
+      </ul>
+    </aside>
   </div>
 </div>
+<script id="dsq-count-scr" src="//theperrygroup.disqus.com/count.js" async></script>
