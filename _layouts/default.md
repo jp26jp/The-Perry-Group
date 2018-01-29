@@ -2,7 +2,7 @@
 layout: null
 ---
 {% assign siteURL = "http://theperry.group" %}
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
   <head>
