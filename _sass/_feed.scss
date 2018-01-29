@@ -1,0 +1,42 @@
+article.feed {
+
+  padding-bottom: $spacing;
+  border-bottom: 1px solid #eee;
+  margin-bottom: $spacing;
+
+
+  .feed-image {
+    display: block;
+    width: 200px;
+    height: 200px;
+    float: left;
+
+    img {
+      height: 100%;
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  .feed-text {
+    display: block;
+    float: right;
+    width: calc(100% - 200px);
+    padding-left: $spacing;
+    text-decoration: none;
+    color: inherit;
+
+    h2 {
+      margin-top: 0;
+
+      span {
+        border-bottom: 2px solid $primary;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 150%;
+    }
+  }
+}

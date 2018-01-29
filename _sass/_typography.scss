@@ -1,7 +1,7 @@
 body {
   font-family: 'Libre Baskerville', serif;
-  color: #333;
-  font-size: 16px;
+  color: #555;
+  font-size: 14px;
 }
 
 h1,
@@ -10,7 +10,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Libre Baskerville', serif;
   margin-bottom: $spacing;
 }
 
@@ -25,7 +24,7 @@ h6 {
 
 h1 {
   line-height: 1.1em;
-  font-size: $spacing * 2;
+  font-size: $spacing * 1.2;
   // text-transform: uppercase;
   text-align: center;
   padding: 0 0 $spacing;
@@ -42,7 +41,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: $spacing * .9;
+  .feed & {
+    font-size: 1.5em;
+    margin-bottom: $spacing / 2;
+  }
 }
 
 p {
@@ -50,7 +53,7 @@ p {
   margin-bottom: 2.2em;
 }
 
-:not(blockquote):not(.feed) > p:first-of-type:first-letter {
+.post :not(blockquote) > p:first-of-type:first-letter {
   color: $primary;
   float: left;
   font-size: $spacing * 2.3;

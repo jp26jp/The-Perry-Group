@@ -1,12 +1,6 @@
-{% assign siteURL = "http://theperry.group" %}
 {% for post in site.posts %}
-  {% if include.author != nil %}
-    {% if post.author == include.author %}
-      <h2><a href="{{ siteURL }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt | strip_html }}</p>
-    {% endif %}
-  {% else %}
-    <h2><a href="{{ siteURL }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+  <article>
+    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
     <p>{{ post.excerpt | strip_html }}</p>
-  {% endif %}
+  </article>
 {% endfor %}
