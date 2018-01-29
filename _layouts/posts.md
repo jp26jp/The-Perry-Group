@@ -12,5 +12,10 @@ layout: default
       <div class="author-name">by <div id="author-name"><a href="/{{ page.author | downcase | replace:' ','-' }}/" title="View all posts by {{ page.author }}">{{ page.author }}</a></div></div>
     </div>
     {{ content }}
+    <ul>
+      {% for related_post in site.related_posts limit: 5 %}
+        <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

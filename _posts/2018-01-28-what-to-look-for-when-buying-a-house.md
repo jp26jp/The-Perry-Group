@@ -2,6 +2,7 @@
 layout: posts
 shortname: museseo
 permalink: "/blog/:title/"
+tag: buyer seller
 title: What to look for when buying a house
 date: 2018-01-28 14:33:04 +0000
 author: Michael Perry
@@ -28,7 +29,7 @@ When buying a home, you have a few options for the [type of loan](https://www.b
 
 **Adjustable-rate mortgage:** An [adjustable-rate mortgage](https://www.bankrate.com/glossary/a/adjustable-rate-mortgage/), or ARM, has a fixed interest rate for an initial period, followed by a period when the lender may periodically adjust the interest rate. For example, a 5/1 ARM has an introductory rate of five years. After that five-year period, the interest rate can change annually. With an ARM, you need to consider how much your monthly payment could increase and your ability to pay if it does go up.
 
-  
+
 3\. Your credit score
 
 You also need to review your credit score before buying a house. Your credit score helps creditors determine your creditworthiness. Borrowers with credit scores of 740 or higher generally [qualify for the best mortgage deals](https://www.bankrate.com/finance/real-estate/good-credit-score-not-good-enough-anymore-1.aspx).
