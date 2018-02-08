@@ -6,7 +6,8 @@ tag: buyer seller
 title: 5 essential money moves for first-time homebuyers
 date: 2018-01-28 11:35:46 +0000
 author: Michael Perry
-image: "/uploads/2018/01/28/kit.jpg"
+image: "/uploads/2018/02/08/Architecture & Interior Design Photography - Purple Moss
+  Architecture - 04(10006).jpg"
 ---
 You’ve decided to go for it. [You know rates are at attractive lows.](https://www.bankrate.com/mortgage.aspx)
 
