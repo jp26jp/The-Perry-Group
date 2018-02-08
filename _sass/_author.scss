@@ -1,0 +1,32 @@
+.author {
+  width: 100%;
+  color: gray;
+  text-align: center;
+  margin: $spacing 0;
+  padding: $spacing 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  .author-image,
+  .date-name {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .author-image {
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: $spacing / 2;
+  }
+
+  .date-name-info {
+    text-align: left;
+    line-height: 20px;
+  }
+
+  a {
+    color: black;
+  }
+
+}

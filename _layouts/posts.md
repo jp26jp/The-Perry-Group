@@ -14,20 +14,26 @@ layout: default
 
     {% include author.html %}
 
-    {% comment %}{% include disqus.html identifier=page.url %}{% endcomment %}
+    {% include disqus.html identifier=page.url %}
 
-    <aside id="related">
-      <h2>You might also like</h2>
-        {% for related_post in site.related_posts limit: 2 %}
-        <article>
+  </div>
+
+  {% if site.related_posts %}
+  <aside id="related">
+    <h2>You might also like</h2>
+      {% for related_post in site.related_posts limit: 2 %}
+      <article class="clearfix">
+        <a href="{{ related_post.url }}">
           <header>
-            <h4><a href="{{ related_post.url }}">{{ related_post.title }}</a></h4>
+            <h4>{{ related_post.title }}</h4>
             <img src="{{ related_post.image }}" />
           </header>
-        </article>
-        {% endfor %}
-      </ul>
-    </aside>
-  </div>
+        </a>
+      </article>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+
 </div>
 <script id="dsq-count-scr" src="//theperrygroup.disqus.com/count.js" async></script>

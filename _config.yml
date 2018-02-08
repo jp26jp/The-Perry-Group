@@ -13,8 +13,9 @@ sass:
 plugins:
   - jekyll/tagging
   - jekyll-tagging-related_posts
-  - jekyll-menus
-#  - jekyll-minimagick
+  - jekyll-minimagick
+
+
 
 # Social
 twitter: theperrygrouput

@@ -1,4 +1,7 @@
 <div class="author">
   <img class="author-image" src="/uploads/defaults/authors/{{ page.author | downcase | replace:' ','-' }}.jpg"/>
-  <div class="author-name">by <a href="/{{ page.author | downcase | replace:' ','-' }}/" title="View all posts by {{ page.author }}">{{ page.author }}</a></div>
+  <div class="date-name">
+    <div class="date-name-info author-name">by <a href="/{{ page.author | downcase | replace:' ','-' }}/" title="View all posts by {{ page.author }}">{{ page.author }}</a></div>
+    <time datetime="2018-02-08 00:05:00" class="date-name-info">February 8th, 2018</time>
+  </div>
 </div>

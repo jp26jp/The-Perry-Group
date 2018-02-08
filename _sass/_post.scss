@@ -35,36 +35,7 @@
 
 }
 
-.author {
-  width: 100%;
-  color: gray;
-  text-align: center;
-  margin: $spacing 0;
-  padding: $spacing 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 
-  .author-image,
-  .author-name {
-    display: inline-block;
-  }
-
-  .author-image {
-    width: 50px;
-    height: auto;
-    border-radius: 100%;
-    margin-right: $spacing / 2;
-  }
-
-  .author-name {
-    line-height: 50px;
-    vertical-align: bottom;
-
-    a {
-      color: black;
-    }
-  }
-}
 
 #end-credit {
 }
