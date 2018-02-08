@@ -15,7 +15,16 @@ plugins:
   - jekyll-tagging-related_posts
   - jekyll-minimagick
 
-
+mini_magick:
+  amp640:
+    source: uploads/banners
+    destination: uploads/banners/resized
+    resize: "1920x1080"
+#  crop900:
+#    source: assets/resized
+#    destination: assets/resized/900
+#    gravity: center
+#    crop: 900+350+0
 
 # Social
 twitter: theperrygrouput
