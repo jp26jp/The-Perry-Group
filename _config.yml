@@ -5,6 +5,7 @@ permalink: pretty
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github: [metadata]
+theme: null
 
 # Build settings
 sass:
@@ -13,18 +14,15 @@ sass:
 plugins:
   - jekyll/tagging
   - jekyll-tagging-related_posts
-  - jekyll-minimagick
 
-mini_magick:
-  amp640:
-    source: uploads/banners
-    destination: uploads/banners/resized
-    resize: "1920x1080"
-#  crop900:
-#    source: assets/resized
-#    destination: assets/resized/900
-#    gravity: center
-#    crop: 900+350+0
+sources:
+  - assets/banners
+  - assets/defaults
+  - assets/defaults/authors
+  - assets/defaults/icons
+  - assets/defaults/logos
+  - assets/images
+  - assets/videos
 
 # Social
 twitter: theperrygrouput
@@ -44,4 +42,3 @@ defaults:
      layout: "posts"
      shortname: museseo
      permalink: /blog/:title/
-#     menus: header

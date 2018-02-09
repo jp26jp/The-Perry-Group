@@ -10,11 +10,6 @@ layout: null
   </head>
 
   <body>
-    <!--<header id="nav">
-      <nav>
-        {% include navigation.html %}
-      </nav>
-    </header>-->
 
     {{content}}
 

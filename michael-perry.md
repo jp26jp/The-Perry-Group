@@ -1,7 +1,7 @@
 ---
 layout: author
 title: Michael Perry
-image: "/uploads/defaults/authors/michael-perry-main.jpg"
+image: "/assets/defaults/authors/michael-perry-main.jpg"
 feed: true
 menu:
   header:
