@@ -1,7 +1,8 @@
 ---
 layout: author
 title: Michael Perry
-image: "/uploads/defaults/authors/michael-perry-main.jpg"
+image: "/uploads/2018/02/08/Architecture & Interior Design Photography - Purple Moss
+  Architecture - 03(19491).jpg"
 feed: true
 menu:
   header:
