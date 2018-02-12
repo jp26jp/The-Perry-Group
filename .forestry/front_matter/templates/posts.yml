@@ -31,3 +31,8 @@ fields:
   label: image
   config:
     required: true
+- type: tag_list
+  label: Tags
+  name: tags
+  description: Give the post 2 or 3 comma separated tags for the post (e.g. homeowners,
+    buyers, etc.)
