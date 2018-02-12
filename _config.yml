@@ -16,13 +16,14 @@ plugins:
 
 
 # Social
-twitter: theperrygrouput
+twitter_site: theperrygrouput
+twitter_creator: michaelperry123
 
 # Verification
-verifyGoogle: kj4LGd8cy7r65lHFUlZ3e3GwenLepI_GyTyWCrNMC0Q
-verifyPinterest: bab86c858262d986316ac81a31ad1326
-verifyNorton: q60-ihfhkn48u6nuervqiazb9tdombuzwqbs25oo8dm6le4orlgigd1hxmo9fzjtupcp170nroz6g02c5p77lorkxg28o0bbjngzne0npr4s0cfp8yzodak5dguqlcj3
-verifyYandex: 293210a66ec684d3
+verifyGoogle: l-K_A3ptM0JETLZmEIagcfugyn1agJZMWQrICgRDDPs
+verifyPinterest: 2c854258dd50ad351f7e57e9c92521b6
+#verifyNorton: q60-ihfhkn48u6nuervqiazb9tdombuzwqbs25oo8dm6le4orlgigd1hxmo9fzjtupcp170nroz6g02c5p77lorkxg28o0bbjngzne0npr4s0cfp8yzodak5dguqlcj3
+#verifyYandex: 293210a66ec684d3
 
 defaults:
   -

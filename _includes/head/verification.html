@@ -1,4 +1,4 @@
 <meta name="google-site-verification" content="{{ site.verifyGoogle }}" />
 <meta name="p:domain_verify" content="{{ site.verifyPinterest }}"/>
-<meta name="norton-safeweb-site-verification" content="{{ site.verifyNorton }}"/>
-<meta name="yandex-verification" content="{{ site.verifyYandex }}"/>
+{% if site.verifyNorton %}<meta name="norton-safeweb-site-verification" content="{{ site.verifyNorton }}"/>{% endif %}
+{% if site.verifyYandex %}<meta name="yandex-verification" content="{{ site.verifyYandex }}"/>{% endif %}
