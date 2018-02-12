@@ -6,6 +6,7 @@ title: How to win a multiple offer situation in Utah
 date: 2018-02-11 09:00:23 +0000
 image: "/assets/2018/02/11/Cool House.jpg"
 author: Michael Perry
+tags: []
 ---
 This market is absolutely brutal. Inventory is at record lows while Utah has been flooded with buyers. Chances are, you will be competing against multiple offers. Certain price ranges and areas are demanding floods of buyers, but unfortunately not a lot of homes are on the market for sale. In order to win a bidding war, a few steps MUST be taken. From our losses to our wins, this is what we have learned. 
 
