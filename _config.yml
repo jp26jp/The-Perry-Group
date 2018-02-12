@@ -5,7 +5,6 @@ permalink: pretty
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github: [metadata]
-theme: null
 
 # Build settings
 sass:
@@ -15,14 +14,6 @@ plugins:
   - jekyll/tagging
   - jekyll-tagging-related_posts
 
-sources:
-  - assets/banners
-  - assets/defaults
-  - assets/defaults/authors
-  - assets/defaults/icons
-  - assets/defaults/logos
-  - assets/images
-  - assets/videos
 
 # Social
 twitter: theperrygrouput
