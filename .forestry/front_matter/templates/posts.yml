@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/how-to-win-a-multiple-offer-situation.md
 - _posts/2018-01-28-5-essential-money-moves-for-first-time-homebuyers.md
 hide_body: false
 fields:
@@ -14,6 +15,11 @@ fields:
   hidden: false
   config:
     required: true
+- type: tag_list
+  label: Tags
+  name: tags
+  description: Give the post 2 or 3 comma separated tags for the post (e.g. homeowners,
+    buyers, etc.)
 - type: select
   name: author
   label: Author
