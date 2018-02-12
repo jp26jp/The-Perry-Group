@@ -18,7 +18,7 @@ layout: default
 
   </div>
 
-  {% if site.related_posts %}
+  {% if site.related_posts.size >= 1 %}
   <aside id="related">
     <h2>You might also like</h2>
       {% for related_post in site.related_posts limit: 2 %}
