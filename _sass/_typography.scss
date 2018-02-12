@@ -24,11 +24,13 @@ h6 {
 
 h1 {
   line-height: 1.1em;
-  font-size: $spacing * 1.2;
+  font-size: $spacing * 2;
   // text-transform: uppercase;
   text-align: center;
   padding: 0 0 $spacing;
   position: relative;
+  margin-left: -$spacing;
+  margin-right: -$spacing;
   &:after {
     content:"";
     border-bottom: 2px solid gray;
