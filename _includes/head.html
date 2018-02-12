@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:url" content="{{ siteURL }}{{ page.url }}">
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
-<meta property="og:image" content="{{ siteURL }}{{ page.image }}" />
+<meta property="og:image" content="{{ siteURL }}{{ page.image | uri_escape }}" />
 <meta property="fb:app_id" content="417134648700495" />
 
 <!-- Twitter Card -->
@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:creator" content="@{{ site.twitter }}">
 <meta name="twitter:title" content="{{ page.title }}">
 <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}">
-<meta name="twitter:image" content="{{ siteURL }}{{ page.image }}" />
+<meta name="twitter:image" content="{{ siteURL }}{{ page.image | uri_escape }}" />
 
 <script>{% include js/youtube.js %}</script>
 
