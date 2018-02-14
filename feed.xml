@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: compress
 permalink: /feed.xml
 ---
 {% for post in site.posts limit: 1 %}{% assign siteDate = post.date | date_to_rfc822 %}{% endfor %}{% assign siteURL = "http://theperry.group" %}<?xml version="1.0" encoding="UTF-8"?>
@@ -33,13 +33,13 @@ permalink: /feed.xml
           {% assign author = "tim.leary" %}
         {% endif %}
         <author>{{ author }}@theperry.group ({{ post.author }})</author>
+        <description>{{ post.excerpt | strip_html }}</description>
         <content:encoded>
           <![CDATA[
           <img width="800" height="auto" alt="{{ post.title }}" src="{{ siteURL }}{{ post.image | uri_escape }}">
           {{ post.content }}
           ]]>
         </content:encoded>
-        <description>{{ post.excerpt | strip_html }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ siteURL }}{{ post.url }}</link>
         <guid>{{ siteURL }}{{ post.url }}</guid>
