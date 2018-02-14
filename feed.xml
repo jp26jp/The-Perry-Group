@@ -1,5 +1,5 @@
 ---
-layout: compress
+layout: null
 permalink: /feed.xml
 ---
 {% for post in site.posts limit: 1 %}{% assign siteDate = post.date | date_to_rfc822 %}{% endfor %}{% assign siteURL = "http://theperry.group" %}<?xml version="1.0" encoding="UTF-8"?>
