@@ -6,5 +6,6 @@ menu:
     identifier: _index
     url: "/"
     weight: 1
-    title: Home
+    title: The Perry Group
 ---
+{% include feed.html %}

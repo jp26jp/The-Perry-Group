@@ -31,5 +31,5 @@ defaults:
       path: ""
       type: posts
     values:
-     layout: "posts"
+     layout: "default"
      permalink: /blog/:title/
