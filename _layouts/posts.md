@@ -14,7 +14,7 @@ layout: default
 
     {% include author.html %}
 
-    {% include disqus.html identifier=page.url %}
+    {% include comments.html identifier=page.url %}
 
   </div>
 
