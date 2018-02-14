@@ -40,7 +40,7 @@ permalink: /feed.xml
           ]]>
         </content:encoded>
         <description>{{ post.excerpt | strip_html }}</description>
-        <pubDate>{{ post.date | date: date_to_rfc822 }}</pubDate>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ siteURL }}{{ post.url }}</link>
         <guid>{{ siteURL }}{{ post.url }}</guid>
         {% for tag in post.tags %}
