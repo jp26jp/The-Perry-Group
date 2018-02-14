@@ -1,22 +1,22 @@
 ---
-layout: null
+layout: compress
 permalink: /feed.xml
 ---
-{% assign siteURL = "http://theperry.group" %}<?xml version="1.0" encoding="UTF-8"?>
+{% for post in site.posts limit: 1 %}{% assign siteDate = post.date | date_to_rfc822 %}{% endfor %}{% assign siteURL = "http://theperry.group" %}<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>{{ site.title }}</title>
     <description>{{ site.description }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <link>{{ siteURL }}</link>
+    <atom:link href="{{ siteURL }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ siteDate }}</pubDate>
+    <lastBuildDate>{{ siteDate }}</lastBuildDate>
     <image>
-      <url>{{ site.url }}/assets/logo.gif</url>
+      <url>{{ siteURL }}/assets/defaults/logos/logo.gif</url>
       <title>{{ site.title }} Blog</title>
-      <link>{{ site.url }}</link>
+      <link>{{ siteURL }}</link>
       <width>144</width>
       <height>144</height>
     </image>
@@ -24,14 +24,23 @@ permalink: /feed.xml
     {% for post in site.posts %}
       <item>
         <title>{{ post.title }}</title>
+        {% assign author = "" %}
+        {% if post.author == "Michael Perry" %}
+          {% assign author = "michael" %}
+        {% elsif post.author == "Mason Conley" %}
+          {% assign author = "mason.conley" %}
+        {% else %}
+          {% assign author = "tim.leary" %}
+        {% endif %}
+        <author>{{ author }}@theperry.group ({{ post.author }})</author>
         <content:encoded>
           <![CDATA[
-          <img width="800" height="auto" alt="" src="{{ site.url }}{{ post.image }}">
+          <img width="800" height="auto" alt="{{ post.title }}" src="{{ siteURL }}{{ post.image }}">
           {{ post.content }}
           ]]>
         </content:encoded>
-        <description>{{ post.description }}</description>
-        {% if post.updated %}<pubDate>{{ post.updated | date: "%Y-%m-%d" }}</pubDate>{% endif %}
+        <description>{{ post.excerpt | strip_html }}</description>
+        <pubDate>{{ post.date | date: "%Y-%m-%d" }}</pubDate>
         <link>{{ siteURL }}{{ post.url }}</link>
         <guid>{{ siteURL }}{{ post.url }}</guid>
         {% for tag in post.tags %}

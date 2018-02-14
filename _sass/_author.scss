@@ -1,3 +1,5 @@
+$author_image: 50px;
+
 .author {
   width: 100%;
   color: gray;
@@ -11,10 +13,11 @@
   .date-name {
     display: inline-block;
     vertical-align: bottom;
+    height: $author_image;
   }
 
   .author-image {
-    width: 50px;
+    width: $author_image;
     height: auto;
     border-radius: 100%;
     margin-right: $spacing / 2;
@@ -22,7 +25,7 @@
 
   .date-name-info {
     text-align: left;
-    line-height: 20px;
+    line-height: $author_image / 2;
   }
 
 }

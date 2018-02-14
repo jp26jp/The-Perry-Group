@@ -1,0 +1,10 @@
+.fb_iframe_widget {
+  margin: 0 0 $spacing * 2;
+  padding-bottom: $spacing * 2;
+  border-bottom: 1px solid #eee;
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget iframe {
+  width:100%$i;
+  min-width:100%$i;
+}

@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: compress
 ---
 {% assign siteURL = "http://theperry.group" %}
 <!DOCTYPE html>
@@ -19,7 +19,16 @@ layout: null
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    {{content}}
+    <main>
+      <article>
+        {{content}}
+      </article>
+      {% include json/BlogPosting.md %}
+    </main>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
 
     <div id="image_popup" class="modal">
       <div id="close"><span class="close">&times;</span></div>

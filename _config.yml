@@ -1,10 +1,11 @@
 title: The Perry Group
-email: your-email@example.com
+# email: your-email@example.com
 url: "http://theperry.group"
 permalink: pretty
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github: [metadata]
+timezone: America/Denver
 
 # Build settings
 sass:
@@ -13,7 +14,6 @@ sass:
 plugins:
   - jekyll/tagging
   - jekyll-tagging-related_posts
-
 
 # Social
 twitter_site: theperrygrouput
@@ -32,5 +32,4 @@ defaults:
       type: posts
     values:
      layout: "posts"
-     shortname: museseo
      permalink: /blog/:title/

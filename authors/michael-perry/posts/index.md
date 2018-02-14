@@ -1,0 +1,3 @@
+---
+permalink: /michael-perry/posts/
+---

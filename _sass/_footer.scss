@@ -1,0 +1,36 @@
+footer {
+  padding: $spacing;
+  background: $dark_background;
+  color: $light_font;
+  text-align: center;
+
+  #social {
+    position: relative;
+    padding: $spacing / 2 0;
+    margin: $spacing / 2 0;
+
+    a {
+      font-size: $spacing * .66;
+      text-decoration: none;
+      color: $light_font;
+      display: inline-block;
+      transition: color $animation;
+      padding: 0 $spacing / 2;
+      &:hover {
+        color: $primary
+      }
+    }
+  }
+
+  #logo img {
+    width: $spacing * 2;
+  }
+
+  #copyright {
+    font-size: 11px;
+    margin: 0 #{-$spacing} #{-$spacing};
+    padding-bottom: $spacing / 2;
+    padding-top: $spacing / 2;
+    background-color: lighten($dark_background, 2);
+  }
+}

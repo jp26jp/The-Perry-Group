@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'theperrygroup';
-  src:  url('http://theperry.group/assets/fonts/theperrygroup.eot?k0vm6y');
-  src:  url('http://theperry.group/assets/fonts/theperrygroup.eot?k0vm6y#iefix') format('embedded-opentype'),
-    url('http://theperry.group/assets/fonts/theperrygroup.ttf?k0vm6y') format('truetype'),
-    url('http://theperry.group/assets/fonts/theperrygroup.woff?k0vm6y') format('woff'),
-    url('http://theperry.group/assets/fonts/theperrygroup.svg?k0vm6y#theperrygroup') format('svg');
+  src:  url('/assets/fonts/theperrygroup.eot?k0vm6y');
+  src:  url('/assets/fonts/theperrygroup.eot?k0vm6y#iefix') format('embedded-opentype'),
+    url('/assets/fonts/theperrygroup.ttf?k0vm6y') format('truetype'),
+    url('/assets/fonts/theperrygroup.woff?k0vm6y') format('woff'),
+    url('/assets/fonts/theperrygroup.svg?k0vm6y#theperrygroup') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="theperrygroup-"], [class*=" theperrygroup-"] {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'theperrygroup' !important;
   speak: none;
@@ -27,25 +27,22 @@
 .theperrygroup-menu-options:before {
   content: "\e900";
 }
-.theperrygroup-home:before {
-  content: "\e901";
-}
-.theperrygroup-contact:before {
-  content: "\e902";
-}
 .theperrygroup-map-point-pointer:before {
   content: "\e903";
 }
 .theperrygroup-telephone-call-receiver:before {
   content: "\e904";
 }
-.theperrygroup-facebook-social-network-logo:before {
+.theperrygroup-facebook:before {
   content: "\e905";
 }
-.theperrygroup-twitter-bird-logo:before {
+.theperrygroup-instagram:before {
+  content: "\e909";
+}
+.theperrygroup-twitter:before {
   content: "\e906";
 }
-.theperrygroup-messenger-user-avatar:before {
+.theperrygroup-user:before {
   content: "\e907";
 }
 .theperrygroup-multimedia-menu:before {

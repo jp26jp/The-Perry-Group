@@ -12,24 +12,34 @@ fields:
 - type: text
   name: title
   label: Title
-  hidden: false
   config:
     required: true
 - type: tag_list
-  label: Tags
   name: tags
-  description: Give the post 2 or 3 tags. Press tab to save tag.
+  label: Tags
+  description: Give the post 2 or 3 tags. Press tab to save tag. Make sure all tags are in lowercase.
 - type: select
   name: author
   label: Author
-  hidden: false
   config:
+    required: true
     source:
       type: custom
     options:
     - Michael Perry
     - Mason Conley
     - Tim Leary
+- type: select
+  name: category
+  label: Category
+  description: If you need more categories, let me know.
+  config:
+    required: true
+    source:
+      type: custom
+    options:
+    - buyer
+    - seller
 - type: file
   name: image
   label: image

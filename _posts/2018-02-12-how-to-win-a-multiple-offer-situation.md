@@ -6,6 +6,7 @@ title: How to win a multiple offer situation in Utah
 date: 2018-02-11 09:00:23 +0000
 image: "/assets/banners/Cool House-1.jpg"
 author: Michael Perry
+category: buyer
 tags:
 - buyer
 - multiple offer
