@@ -5,7 +5,9 @@ permalink: /feed.xml
 {% for post in site.posts limit: 1 %}{% assign siteDate = post.date | date_to_rfc822 %}{% endfor %}{% assign siteURL = "http://theperry.group" %}<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  >
   <channel>
     <title>{{ site.title }}</title>
     <description>{{ site.description }}</description>
@@ -34,9 +36,9 @@ permalink: /feed.xml
         {% endif %}
         <author>{{ author }}@theperry.group ({{ post.author }})</author>
         <description>{{ post.excerpt | strip_html }}</description>
+        <media:content url="{{ siteURL }}{{ post.image | uri_escape }}" type="image/jpg"/>
         <content:encoded>
           <![CDATA[
-          <media:content url="{{ siteURL }}{{ post.image | uri_escape }}" type="image/jpg">
           <img width="800" height="auto" alt="{{ post.title }}" src="{{ siteURL }}{{ post.image | uri_escape }}">
           {{ post.content }}
           ]]>
