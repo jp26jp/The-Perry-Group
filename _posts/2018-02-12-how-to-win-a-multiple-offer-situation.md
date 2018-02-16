@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 shortname: museseo
 permalink: "/blog/:title/"
 title: How to win a multiple offer situation in Utah
