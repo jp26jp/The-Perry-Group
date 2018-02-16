@@ -36,6 +36,7 @@ permalink: /feed.xml
         <description>{{ post.excerpt | strip_html }}</description>
         <content:encoded>
           <![CDATA[
+          <media:content url="{{ siteURL }}{{ post.image | uri_escape }}" type="image/jpg">
           <img width="800" height="auto" alt="{{ post.title }}" src="{{ siteURL }}{{ post.image | uri_escape }}">
           {{ post.content }}
           ]]>
