@@ -1,6 +1,13 @@
 {% for post in site.posts %}
+  {% if post.author == include.author %}
   <article>
     <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
     <p>{{ post.excerpt | strip_html }}</p>
   </article>
+  {% elsif include.author == nil %}
+  <article>
+    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt | strip_html }}</p>
+  </article>
+  {% endif %}
 {% endfor %}
