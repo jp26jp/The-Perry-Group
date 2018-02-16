@@ -1,7 +1,6 @@
 ---
 pages:
 - _posts/2018-02-12-how-to-win-a-multiple-offer-situation.md
-- _posts/2018-01-28-5-essential-money-moves-for-first-time-homebuyers.md
 hide_body: false
 fields:
 - type: text
@@ -17,7 +16,8 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
-  description: Give the post 2 or 3 tags. Press tab to save tag. Make sure all tags are in lowercase.
+  description: Give the post 2 or 3 tags. Press tab to save tag. Make sure all tags
+    are in lowercase.
 - type: select
   name: author
   label: Author
