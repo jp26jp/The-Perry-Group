@@ -1,31 +1,32 @@
-$author_image: 50px;
-
 .author {
-  width: 100%;
-  color: gray;
-  text-align: center;
-  margin: $spacing 0;
-  padding: $spacing 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 
-  .author-image,
-  .date-name {
-    display: inline-block;
-    vertical-align: bottom;
-    height: $author_image;
+  header {
+    position: relative;
   }
 
-  .author-image {
-    width: $author_image;
-    height: auto;
-    border-radius: 100%;
-    margin-right: $spacing / 2;
+  h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0,-50%, 0);
+    color: white;
+    left: $spacing * 3;
+    z-index: 1;
   }
 
-  .date-name-info {
-    text-align: left;
-    line-height: $author_image / 2;
+  .author-section {
+    padding: $spacing;
+  }
+
+  .author-split-section {
+    float: left;
+  }
+
+  .about-me-section {
+    width: 60%;
+  }
+
+  .contact-me-section {
+    width: 40%;
   }
 
 }

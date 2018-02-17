@@ -1,0 +1,63 @@
+.feed-content {
+  padding: $spacing;
+
+  h2 {
+    border-bottom: 1px solid $divider;
+  }
+
+  article:not(:last-child) {
+    margin-bottom: $spacing * 2;
+    border-bottom: 1px solid $divider;
+  }
+
+  article {
+    padding-bottom: $spacing * 2;
+
+    .post-section {
+      overflow: hidden;
+    }
+
+    .post-image {
+      float: right;
+      width: 60%;
+      margin-left: $spacing;
+      margin-bottom: $spacing / 2;
+
+      .post-image-frame {
+        width: 100%;
+        padding-top: 56%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          position: absolute;
+          top: -100%;
+          right: -100%;
+          bottom: -100%;
+          left: -100%;
+        }
+      }
+    }
+
+    .post-text {
+      h2, h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+      .date-name-text {
+        font-size: 90%;
+        color: $gray_font;
+        font-style: italic;
+        margin: $spacing 0 $spacing / 2;
+      }
+      p {
+        text-align: justify;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,13 +1,31 @@
-{% for post in site.posts %}
+{% assign counter = 0 %}{% for post in site.posts %}{% assign counter = counter | plus: 1 %}
   {% if post.author == include.author %}
-  <article>
-    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt | strip_html }}</p>
+  <article class="clearfix">
+    <div class="post-section post-text">
+      {% if include.image == true and counter == 1%}<div class="post-section post-image">
+        <div class="post-image-frame"><img src="{{ post.image }}" alt="{{ post.title }}"/></div>
+      </div>{% endif %}
+      <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+      <div class="date-name-text">
+        by <a href="/{{ post.author | slugify }}/" title="View all posts by {{ post.author }}">{{ post.author }}</a>
+        on <time datetime="{{ post.date }}" class="date-name-info">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </div>
+      <p>{{ post.excerpt | strip_html }}</p>
+    </div>
   </article>
   {% elsif include.author == nil %}
-  <article>
-    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt | strip_html }}</p>
+  <article class="clearfix">
+    <div class="post-section post-text">
+      {% if include.image == true and counter == 1%}<div class="post-section post-image">
+        <div class="post-image-frame"><img src="{{ post.image }}" alt="{{ post.title }}"/></div>
+      </div>{% endif %}
+      <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+      <div class="date-name-text">
+        by <a href="/{{ post.author | slugify }}/" title="View all posts by {{ post.author }}">{{ post.author }}</a>
+        on <time datetime="{{ post.date }}" class="date-name-info">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </div>
+      <p>{{ post.excerpt | strip_html }}</p>
+    </div>
   </article>
   {% endif %}
 {% endfor %}
