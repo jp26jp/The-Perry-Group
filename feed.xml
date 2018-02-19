@@ -27,14 +27,14 @@ permalink: /feed.xml
       <item>
         <title>{{ post.title }}</title>
         {% assign author = "" %}
-        {% if post.author == "Michael Perry" %}
+        {% if post.agent == "Michael Perry" %}
           {% assign author = "michael" %}
-        {% elsif post.author == "Mason Conley" %}
+        {% elsif post.agent == "Mason Conley" %}
           {% assign author = "mason.conley" %}
         {% else %}
           {% assign author = "tim.leary" %}
         {% endif %}
-        <author>{{ author }}@theperry.group ({{ post.author }})</author>
+        <author>{{ author }}@theperry.group ({{ post.agent }})</author>
         <description>{{ post.excerpt | strip_html }}</description>
         <media:content url="{{ siteURL }}{{ post.image | uri_escape }}" type="image/jpg"/>
         <content:encoded>

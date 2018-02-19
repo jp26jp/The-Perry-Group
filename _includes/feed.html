@@ -1,5 +1,5 @@
 {% assign counter = 0 %}{% for post in site.posts %}{% assign counter = counter | plus: 1 %}
-  {% if post.author == include.author %}
+  {% if post.agent == include.agent %}
   <article class="clearfix">
     <div class="post-section post-text">
       {% if include.image == true and counter == 1%}<div class="post-section post-image">
@@ -7,13 +7,13 @@
       </div>{% endif %}
       <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
       <div class="date-name-text">
-        by <a href="/{{ post.author | slugify }}/" title="View all posts by {{ post.author }}">{{ post.author }}</a>
+        by <a href="/{{ post.agent | slugify }}/" title="View all posts by {{ post.agent }}">{{ post.agent }}</a>
         on <time datetime="{{ post.date }}" class="date-name-info">{{ post.date | date: "%B %-d, %Y" }}</time>
       </div>
       <p>{{ post.excerpt | strip_html }}</p>
     </div>
   </article>
-  {% elsif include.author == nil %}
+  {% elsif include.agent == nil %}
   <article class="clearfix">
     <div class="post-section post-text">
       {% if include.image == true and counter == 1%}<div class="post-section post-image">
@@ -21,7 +21,7 @@
       </div>{% endif %}
       <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
       <div class="date-name-text">
-        by <a href="/{{ post.author | slugify }}/" title="View all posts by {{ post.author }}">{{ post.author }}</a>
+        by <a href="/{{ post.agent | slugify }}/" title="View all posts by {{ post.agent }}">{{ post.agent }}</a>
         on <time datetime="{{ post.date }}" class="date-name-info">{{ post.date | date: "%B %-d, %Y" }}</time>
       </div>
       <p>{{ post.excerpt | strip_html }}</p>

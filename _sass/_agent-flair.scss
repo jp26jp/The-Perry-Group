@@ -1,6 +1,6 @@
 $author_image: 50px;
 
-.author-flair {
+.agent-flair {
   width: 100%;
   color: gray;
   text-align: center;
@@ -9,14 +9,14 @@ $author_image: 50px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 
-  .author-image,
+  .agent-image,
   .date-name {
     display: inline-block;
     vertical-align: bottom;
     height: $author_image;
   }
 
-  .author-image {
+  .agent-image {
     width: $author_image;
     height: auto;
     border-radius: 100%;

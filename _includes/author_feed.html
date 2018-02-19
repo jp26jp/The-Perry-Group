@@ -1,5 +1,5 @@
 {% for post in site.posts %}
-  {% if post.author == include.author %}
+  {% if post.agent == include.agent %}
     <article class="feed clearfix">
       <a href="{{ post.url }}" title="{{ post.title }}" class="feed-image">
         <img src="{{ post.image }}" />
