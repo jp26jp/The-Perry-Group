@@ -17,7 +17,7 @@ fields:
   label: Feed
   type: boolean
   hidden: false
-  default: ''
+  default: true
 - name: type
   label: Type
   type: text
