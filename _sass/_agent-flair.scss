@@ -1,4 +1,4 @@
-$author_image: 50px;
+$agent_image: 50px;
 
 .agent-flair {
   width: 100%;
@@ -13,11 +13,11 @@ $author_image: 50px;
   .date-name {
     display: inline-block;
     vertical-align: bottom;
-    height: $author_image;
+    height: $agent_image;
   }
 
   .agent-image {
-    width: $author_image;
+    width: $agent_image;
     height: auto;
     border-radius: 100%;
     margin-right: $spacing / 2;
@@ -25,7 +25,7 @@ $author_image: 50px;
 
   .date-name-info {
     text-align: left;
-    line-height: $author_image / 2;
+    line-height: $agent_image / 2;
   }
 
 }
