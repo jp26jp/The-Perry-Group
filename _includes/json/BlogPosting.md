@@ -15,7 +15,7 @@
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "author": {
       "@type": "Person",
-      "name": "{{ page.author }}"
+      "name": "{{ page.agent }}"
     },
      "publisher": {
       "@type": "Organization",
