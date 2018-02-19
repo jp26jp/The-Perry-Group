@@ -15,6 +15,7 @@ sass:
 plugins:
   - jekyll/tagging
   - jekyll-tagging-related_posts
+  - jekyll-redirect-from
 
 # Social
 twitter_site: theperrygrouput
