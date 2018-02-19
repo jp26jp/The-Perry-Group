@@ -1,5 +1,4 @@
 .agent {
-
   header {
     position: relative;
   }
@@ -27,6 +26,28 @@
 
   .contact-me-section {
     width: 40%;
-  }
 
+    a {
+      display: block;
+      line-height: $spacing / 2;
+      margin: $spacing / 2 0;
+      transition: color $animation;
+
+      &:hover {
+        color: $primary;
+      }
+
+      &.social {
+        display: inline-block;
+        margin-top: 0;
+      }
+
+      i {
+        display: inline-block;
+        text-align: left;
+        width: $spacing;
+        line-height: $spacing / 2;
+      }
+    }
+  }
 }

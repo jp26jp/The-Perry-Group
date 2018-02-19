@@ -24,13 +24,16 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.theperrygroup-email:before {
+  content: "\e902";
+}
 .theperrygroup-menu-options:before {
   content: "\e900";
 }
 .theperrygroup-map-point-pointer:before {
   content: "\e903";
 }
-.theperrygroup-telephone-call-receiver:before {
+.theperrygroup-phone:before {
   content: "\e904";
 }
 .theperrygroup-facebook:before {
@@ -41,6 +44,9 @@ i {
 }
 .theperrygroup-twitter:before {
   content: "\e906";
+}
+.theperrygroup-linkedin:before {
+  content: "\e901";
 }
 .theperrygroup-user:before {
   content: "\e907";

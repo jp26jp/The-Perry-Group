@@ -14,6 +14,17 @@ layout: default
     </div>
     <div class="agent-split-section agent-section contact-me-section">
       <h2 id="contact-me">Contact Me</h2>
+      {% assign agent = "" %}
+      {% if page.title == "Michael Perry" %}{% assign agent = "michael" %}
+      {% elsif page.title == "Mason Conley" %}{% assign agent = "mason.conley" %}
+      {% elsif page.title == "Tim Leary" %}{% assign agent = "tim.leary" %}
+      {% endif %}
+      <a href="tel:1-{{ page.phone }}"><i class="theperrygroup-phone"></i>{{ page.phone }}</a>
+      <a href="mailto:{{ agent }}@theperry.group"><i class="theperrygroup-email"></i>{{ agent }}@theperry.group</a>
+      {% if page.facebook %}<a class="social" href="https://www.facebook.com/{{ page.facebook }}" target="_blank" title="Connect with me on Facebook"><i class="theperrygroup-facebook"></i></a>{% endif %}
+      {% if page.instagram %}<a class="social" href="https://www.instagram.com/{{ page.instagram }}" target="_blank" title="Connect with me on Instagram"><i class="theperrygroup-instagram"></i></a>{% endif %}
+      {% if page.twitter %}<a class="social" href="https://www.twitter.com/{{ page.twitter }}" target="_blank" title="Connect with me on Twitter"><i class="theperrygroup-twitter"></i></a>{% endif %}
+      {% if page.linkedin %}<a class="social" href="https://www.linkedin.com/{{ page.linkedin }}" target="_blank" title="Connect with me on LinkedIn"><i class="theperrygroup-linkedin"></i></a>{% endif %}
     </div>
   </div>
 

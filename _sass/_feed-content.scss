@@ -5,6 +5,10 @@
     border-bottom: 1px solid $divider;
   }
 
+  h3 {
+    line-height: 150%;
+  }
+
   article:not(:last-child) {
     margin-bottom: $spacing * 2;
     border-bottom: 1px solid $divider;
@@ -53,6 +57,7 @@
         color: $gray_font;
         font-style: italic;
         margin: $spacing 0 $spacing / 2;
+        line-height: 120%;
       }
       p {
         text-align: justify;
