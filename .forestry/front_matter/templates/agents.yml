@@ -31,10 +31,10 @@ fields:
 - name: date
   label: Date
   type: datetime
-  hidden: false
+  hidden: true
   default: ''
 - name: permalink
   label: Permalink
   type: text
-  hidden: false
+  hidden: true
   default: "/agents/:title/"
