@@ -29,7 +29,6 @@ verifyPinterest: 2c854258dd50ad351f7e57e9c92521b6
 collections:
   agents:
     output: true
-    permalink: /agents/:title/
 
 defaults:
   -
@@ -45,3 +44,4 @@ defaults:
       type: agents
     values:
      layout: "agent"
+     permalink: /agents/:title/
