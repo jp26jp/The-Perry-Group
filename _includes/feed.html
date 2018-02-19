@@ -7,7 +7,7 @@
       </div>{% endif %}
       <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
       <div class="date-name-text">
-        by <a href="/{{ post.agent | slugify }}/" title="View all posts by {{ post.agent }}">{{ post.agent }}</a>
+        by <a href="/agents/{{ post.agent | slugify }}/#latest-posts" title="View all posts by {{ post.agent }}">{{ post.agent }}</a>
         on <time datetime="{{ post.date }}" class="date-name-info">{{ post.date | date: "%B %-d, %Y" }}</time>
       </div>
       <p>{{ post.excerpt | strip_html }}</p>
@@ -21,7 +21,7 @@
       </div>{% endif %}
       <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
       <div class="date-name-text">
-        by <a href="/{{ post.agent | slugify }}/" title="View all posts by {{ post.agent }}">{{ post.agent }}</a>
+        by <a href="/agents/{{ post.agent | slugify }}/#latest-posts" title="View all posts by {{ post.agent }}">{{ post.agent }}</a>
         on <time datetime="{{ post.date }}" class="date-name-info">{{ post.date | date: "%B %-d, %Y" }}</time>
       </div>
       <p>{{ post.excerpt | strip_html }}</p>
