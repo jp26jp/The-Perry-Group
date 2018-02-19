@@ -26,6 +26,9 @@ verifyPinterest: 2c854258dd50ad351f7e57e9c92521b6
 #verifyNorton: q60-ihfhkn48u6nuervqiazb9tdombuzwqbs25oo8dm6le4orlgigd1hxmo9fzjtupcp170nroz6g02c5p77lorkxg28o0bbjngzne0npr4s0cfp8yzodak5dguqlcj3
 #verifyYandex: 293210a66ec684d3
 
+collections:
+  agents:
+
 defaults:
   -
     scope:
@@ -34,3 +37,10 @@ defaults:
     values:
      layout: "post"
      permalink: /blog/:title/
+  -
+    scope:
+      path: ""
+      type: agents
+    values:
+     layout: "agent"
+     permalink: /agents/:title/

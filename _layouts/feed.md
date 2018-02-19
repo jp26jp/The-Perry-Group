@@ -9,4 +9,11 @@ layout: default
 
   {{ content }}
 
+  <div class="author-section">
+    <h2 id="latest-posts">Latest Posts</h2>
+
+    {% include feed.html image=true %}
+
+  </div>
+
 </div>
