@@ -7,7 +7,7 @@ fields:
   name: layout
   label: Layout
   hidden: true
-  default: posts
+  default: post
 - type: text
   name: title
   label: Title
