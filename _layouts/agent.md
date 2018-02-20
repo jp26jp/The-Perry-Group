@@ -10,7 +10,7 @@ layout: default
   <div class="clearfix section">
     <div class="split-section about-me-section">
       <h2 id="about-me">About Me</h2>
-      {{ page.description }}
+      <p>{{ page.description }}</p>
     </div>
     <div class="split-section contact-me-section">
       <h2 id="contact-me">Contact Me</h2>
