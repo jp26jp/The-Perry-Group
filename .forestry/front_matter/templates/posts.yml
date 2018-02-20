@@ -19,8 +19,8 @@ fields:
   description: Give the post 2 or 3 tags. Press tab to save tag. Make sure all tags
     are in lowercase.
 - type: select
-  name: author
-  label: Author
+  name: agent
+  label: Agent
   config:
     required: true
     source:

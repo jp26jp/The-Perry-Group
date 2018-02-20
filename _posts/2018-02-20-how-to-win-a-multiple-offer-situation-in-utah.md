@@ -3,7 +3,7 @@ layout: post
 permalink: "/blog/:title/"
 title: How to win a multiple offer situation in Utah
 date: 2018-02-20 13:24:11 +0000
-author: Michael Perry
+agent: Michael Perry
 category: buyer
 tags:
 - multiple offer
