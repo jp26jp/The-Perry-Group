@@ -38,3 +38,7 @@ fields:
   type: text
   hidden: true
   default: "/agents/:title/"
+- name: facebook
+  label: Facebook
+  type: text
+  hidden: false
