@@ -1,4 +1,4 @@
-.agent {
+.agent, .feed {
   header {
     position: relative;
   }
@@ -10,14 +10,6 @@
     color: white;
     left: $spacing * 3;
     z-index: 1;
-  }
-
-  .agent-section {
-    padding: $spacing;
-  }
-
-  .agent-split-section {
-    float: left;
   }
 
   .about-me-section {

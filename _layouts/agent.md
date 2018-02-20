@@ -2,17 +2,17 @@
 layout: default
 ---
 <header>
-  <h1>{{ page.title }}</h1>
+  {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
   <div id="header-image"><img src="{{ page.image }}" /></div>
 </header>
 <div class="feed-content">
 
-  <div class="agent-section-container clearfix">
-    <div class="agent-split-section agent-section about-me-section">
+  <div class="clearfix section">
+    <div class="split-section about-me-section">
       <h2 id="about-me">About Me</h2>
       {{ content }}
     </div>
-    <div class="agent-split-section agent-section contact-me-section">
+    <div class="split-section contact-me-section">
       <h2 id="contact-me">Contact Me</h2>
       {% assign agent = "" %}
       {% if page.title == "Michael Perry" %}{% assign agent = "michael" %}
@@ -30,7 +30,7 @@ layout: default
     </div>
   </div>
 
-  {% if page.feed == true %}<div class="agent-section">
+  {% if page.feed == true %}<div class="section">
     <h2 id="latest-posts">Latest Posts</h2>
 
     {% include feed.html agent="Michael Perry" image=true %}

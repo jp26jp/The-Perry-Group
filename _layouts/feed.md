@@ -9,7 +9,7 @@ layout: default
 
   {{ content }}
 
-  <div class="agent-section">
+  <div class="section">
     <h2 id="latest-posts">Latest Posts</h2>
 
     {% include feed.html image=true %}

@@ -8,6 +8,9 @@ layout: default
     {% include agent.html %}
   </div>
 </header>
+
+{% include social-share.html %}
+
 <div class="content post-content">
 
   {{ content }}

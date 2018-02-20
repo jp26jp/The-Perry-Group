@@ -31,7 +31,7 @@ layout: compress
       <div id="caption"></div>
     </div>
 
-    <script src="{{ siteURL }}/js/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 
 

@@ -1,0 +1,23 @@
+.section {
+  padding: $spacing;
+
+  &:not(:first-of-type) {
+    padding-top: 0;
+  }
+}
+
+.split-section {
+  float: left;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:first-child {
+    padding-right: $spacing;
+  }
+
+  &:last-child {
+    padding-left: $spacing;
+  }
+}

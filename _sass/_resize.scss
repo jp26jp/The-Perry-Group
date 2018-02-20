@@ -1,5 +1,21 @@
+@media screen and (max-width: 1000px) {
+  .social-share {
+    left: 5%;
+  }
+}
 @media screen and (max-width: 900px) {
-  .agent .agent-split-section {width: 100%;}
+  .social-share {
+    left: 10px;
+  }
+  .agent .split-section {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+
+    &:first-child {
+      padding-bottom: $spacing;
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
