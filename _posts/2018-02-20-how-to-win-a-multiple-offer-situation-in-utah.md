@@ -1,4 +1,5 @@
 ---
+redirect_from: "/blog/how-to-win-a-multiple-offer-situation/"
 layout: post
 permalink: "/blog/:title/"
 title: How to win a multiple offer situation in Utah
