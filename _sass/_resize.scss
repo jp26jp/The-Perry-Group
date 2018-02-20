@@ -8,6 +8,30 @@
   h1 {font-size: $spacing * 1.2}
 }
 
+@media screen and (max-width: 600px) {
+  .agent #header-image img {
+    bottom: 0;
+    transform: translate3d(0,0,0);
+    top: auto;
+    right: 0;
+    width: 120%;
+  }
+  .agent h1 {
+    top: 70%;
+  }
+  #header-image img {width: 150%;}
+}
+
 @media screen and (max-width: 500px) {
+  .agent h1 {
+    width: 100%;
+    left: 0;
+    transform: translate3d(0,0,0);
+    text-align: center;
+    top: 80%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .agent #header-image img {width: 150%}
   #header-image img {width: 150%;}
 }
