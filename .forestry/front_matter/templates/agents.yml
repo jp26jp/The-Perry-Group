@@ -23,6 +23,22 @@ fields:
   type: text
   hidden: true
   default: ''
+- name: facebook
+  label: Facebook
+  type: text
+  hidden: false
+- name: twitter
+  label: Twitter
+  type: text
+  hidden: false
+- name: instagram
+  label: Instagram
+  type: text
+  hidden: false
+- name: linkedin
+  label: LinkedIn
+  type: text
+  hidden: false
 - name: image
   label: Image
   type: file
@@ -38,7 +54,3 @@ fields:
   type: text
   hidden: true
   default: "/agents/:title/"
-- name: facebook
-  label: Facebook
-  type: text
-  hidden: false
