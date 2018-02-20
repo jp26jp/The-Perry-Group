@@ -25,7 +25,7 @@ layout: default
         {% if page.facebook %}<a class="social" href="https://www.facebook.com/{{ page.facebook }}" target="_blank" title="Connect with me on Facebook"><i class="theperrygroup-facebook"></i></a>{% endif %}
         {% if page.instagram %}<a class="social" href="https://www.instagram.com/{{ page.instagram }}" target="_blank" title="Connect with me on Instagram"><i class="theperrygroup-instagram"></i></a>{% endif %}
         {% if page.twitter %}<a class="social" href="https://www.twitter.com/{{ page.twitter }}" target="_blank" title="Connect with me on Twitter"><i class="theperrygroup-twitter"></i></a>{% endif %}
-        {% if page.linkedin %}<a class="social" href="https://www.linkedin.com/{{ page.linkedin }}" target="_blank" title="Connect with me on LinkedIn"><i class="theperrygroup-linkedin"></i></a>{% endif %}
+        {% if page.linkedin %}<a class="social" href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" title="Connect with me on LinkedIn"><i class="theperrygroup-linkedin"></i></a>{% endif %}
       </div>
     </div>
   </div>
