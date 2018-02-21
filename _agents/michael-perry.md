@@ -10,7 +10,6 @@ instagram: michaelperry123
 twitter: michaelperry123
 linkedin: michaeleperry123
 date: 2018-02-20 00:17:38 +0000
-type: ''
 permalink: "/agents/:title/"
 description: I got into real estate with the mission to help people out in a much
   larger way. Real Estate is such an important transaction that carries so much weight.
