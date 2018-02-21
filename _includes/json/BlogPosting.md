@@ -12,7 +12,6 @@
       "url": "{{ siteURL }}{{ page.image }}"
     },
     "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "datePublished": "{{ page.date | date_to_xmlschema }}",
     "author": {
       "@type": "Person",
       "name": "{{ page.agent }}"
