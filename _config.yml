@@ -17,6 +17,9 @@ plugins:
   - jekyll-tagging-related_posts
   - jekyll-redirect-from
 
+# Analytics
+idGoogleTagManager: GTM-MHDWN2Z
+
 # Social
 twitter_site: theperrygrouput
 twitter_creator: michaelperry123

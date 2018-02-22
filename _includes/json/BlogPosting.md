@@ -9,7 +9,7 @@
     "headline": "{{ page.title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ siteURL }}{{ page.image }}"
+      "url": "{{ siteURL }}{{ page.image | uri_escape }}"
     },
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "author": {
