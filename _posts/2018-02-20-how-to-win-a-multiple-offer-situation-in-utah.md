@@ -3,7 +3,7 @@ redirect_from: "/blog/how-to-win-a-multiple-offer-situation/"
 layout: post
 permalink: "/blog/:title/"
 title: How to win a multiple offer situation in Utah
-date: 2018-02-22 13:24:11 +0000
+date: 2018-02-22 18:24:11 -0000
 agent: Michael Perry
 category: buyer
 tags:
