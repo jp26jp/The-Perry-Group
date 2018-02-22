@@ -16,14 +16,23 @@ footer {
       display: inline-block;
       transition: color $animation;
       padding: 0 $spacing / 2;
+
       &:hover {
-        color: $primary
+        color: $primary;
       }
     }
   }
 
-  #logo img {
-    width: $spacing * 2;
+  #logo {
+    img {
+      width: $spacing * 2;
+      display: block;
+      margin: auto;
+    }
+    #keller-williams {
+      margin-top: $spacing / 2;
+      width: 140px;
+    }
   }
 
   #copyright {
