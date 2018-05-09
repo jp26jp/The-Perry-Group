@@ -1,9 +1,15 @@
 #related {
   margin-top: $spacing * 2;
+  z-index: 1;
+  position: relative;
+  display: flex;
+      flex-wrap: wrap;
+
   article {
     float: left;
     width: 50%;
     border-top: 1px solid #f5f5f5;
+    flex-grow: 1;
 
     header {
       height: 300px;
@@ -18,18 +24,22 @@
         height: auto;
         z-index: -1;
         transform: translate3d(-50%,-50%,0);
-        transition: transform .3s;
+        transition: transform 0.3s;
       }
     }
   }
+
   h2 {
     text-align: center;
     margin-bottom: $spacing;
+    width: 100%;
   }
-  h3, h4 {
+
+  h3,
+  h4 {
     margin: 0;
     width: 75%;
-    padding-right: $spacing / 3;
+    padding: $spacing;
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -40,32 +50,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: #fff;
     text-decoration: none;
 
     &:after {
-      content:"";
-      transition: .3s opacity;
+      content: "";
+      transition: 0.3s opacity;
       z-index: -1;
       background: #202020;
-      opacity: .7;
+      opacity: 0.7;
       position: absolute;
       width: 110%;
       height: 110%;
       top: 0;
       left: 0;
-
     }
-
   }
 
   a:hover {
     img {
       transform: scale(1.1) translate3d(-50%,-50%,0);
     }
-    h3:after, h4:after {
-      opacity: .4;
+
+    h3:after,
+    h4:after {
+      opacity: 0.4;
     }
   }
-
 }
