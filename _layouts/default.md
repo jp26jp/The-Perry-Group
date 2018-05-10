@@ -32,6 +32,8 @@ layout: compress
       <div id="caption"></div>
     </div>
 
+    {% include json/SocialProfile.md %}
+
     <script src="/js/script.js"></script>
   </body>
 

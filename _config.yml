@@ -21,6 +21,8 @@ plugins:
 idGoogleTagManager: GTM-MHDWN2Z
 
 # Social
+instagram: theperrygrouput
+facebook: theperrygrouput
 twitter_site: theperrygrouput
 twitter_creator: michaelperry123
 
@@ -33,6 +35,8 @@ verifyPinterest: 2c854258dd50ad351f7e57e9c92521b6
 collections:
   agents:
     output: true
+  amp:
+    output: true
 
 defaults:
   -
@@ -42,6 +46,13 @@ defaults:
     values:
      layout: "post"
      permalink: /blog/:title/
+  -
+    scope:
+      path: ""
+      type: amp
+    values:
+     layout: "post"
+     permalink: /amp/blog/:title/
   -
     scope:
       path: ""
