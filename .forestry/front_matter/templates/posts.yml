@@ -19,7 +19,7 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
-  description: Give the post 2 or 3 tags. Press tab to save tag. Make sure all tags
+  description: Give the post 2 or 3 tags. Press TAB to save tag. Make sure all tags
     are in lowercase.
 - type: select
   name: agent
