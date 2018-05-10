@@ -20,7 +20,7 @@ fields:
   name: tags
   label: Tags
   description: Give the post 2 or 3 tags. Press TAB to save tag. Make sure all tags
-    are in lowercase.
+    are in LOWERCASE.
 - type: select
   name: agent
   label: Agent
