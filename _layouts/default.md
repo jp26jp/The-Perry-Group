@@ -32,7 +32,7 @@ layout: compress
       <div id="caption"></div>
     </div>
 
-    {% include json/SocialProfile.md %}
+    {% include json/Organization.md %}
 
     <script src="/js/script.js"></script>
   </body>
