@@ -53,3 +53,5 @@ fields:
   type: text
   hidden: true
   default: "/agents/:title/"
+pages:
+- _agents/Michael Perry.md
