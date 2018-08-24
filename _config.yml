@@ -4,6 +4,7 @@ phone: 8018299785
 description: The Perry Group is an awesome real estate group that specializes in the Salt Lake/Sugarhouse area of Utah.
 url: "http://theperry.group"
 permalink: pretty
+#incremental: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github: [metadata]
@@ -35,7 +36,9 @@ verifyPinterest: 2c854258dd50ad351f7e57e9c92521b6
 
 collections:
   agents:
+    title: Agents
     output: true
+    permalink: /:collection/:path
 
 defaults:
   -
@@ -51,4 +54,3 @@ defaults:
       type: agents
     values:
      layout: "agent"
-     permalink: /agents/:title/
