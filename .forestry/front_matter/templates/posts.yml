@@ -1,9 +1,5 @@
 ---
-pages:
-- _posts/2018-05-10-5-surprising-things-that-can-increase-how-much-your-home-is-worth.md
-- _posts/2018-05-10-temp.md
-- _posts/2018-05-09-finding-the-right-home-for-you.md
-- _posts/2018-02-20-how-to-win-a-multiple-offer-situation-in-utah.md
+label: posts
 hide_body: false
 is_partial: false
 fields:
@@ -49,3 +45,7 @@ fields:
   label: image
   config:
     required: true
+pages:
+- _posts/2018-05-10-temp.md
+- _posts/2018-05-09-finding-the-right-home-for-you.md
+- _posts/2018-02-20-how-to-win-a-multiple-offer-situation-in-utah.md

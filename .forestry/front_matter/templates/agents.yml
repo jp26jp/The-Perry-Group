@@ -1,7 +1,6 @@
 ---
-pages:
-- _agents/michael-perry.md
-hide_body: true
+label: agents
+hide_body: false
 is_partial: false
 fields:
 - name: title
