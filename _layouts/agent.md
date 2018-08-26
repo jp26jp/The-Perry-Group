@@ -16,8 +16,10 @@ layout: default
       <h2 id="contact-me">Contact Me</h2>
       {% assign agent = "" %}
       {% if page.title == "Michael Perry" %}{% assign agent = "michael" %}
+      {% elsif page.title == "Jack Perry" %}{% assign agent = "jack" %}
       {% elsif page.title == "Mason Conley" %}{% assign agent = "mason.conley" %}
       {% elsif page.title == "Tim Leary" %}{% assign agent = "tim.leary" %}
+      {% elsif page.title == "Travis Clemens" %}{% assign agent = "travis.clemens" %}
       {% endif %}
       <a class="contact-section" href="tel:1-{{ page.phone }}"><i class="theperrygroup-phone"></i>{{ page.phone }}</a>
       <a class="contact-section" href="mailto:{{ agent }}@theperry.group"><i class="theperrygroup-email"></i>{{ agent }}@theperry.group</a>
@@ -29,7 +31,6 @@ layout: default
       </div>
     </div>
   </div>
-
   {% if page.feed == true %}<div class="section">
     <h2 id="latest-posts">Latest Posts</h2>
 

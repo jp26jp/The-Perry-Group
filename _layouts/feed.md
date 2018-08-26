@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header>
+<header class="feed-header">
   <h1>{{ page.title }}</h1>
   <div id="header-image"><img src="{{ page.image }}" /></div>
 </header>

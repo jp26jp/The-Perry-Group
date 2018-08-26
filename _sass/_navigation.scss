@@ -1,8 +1,55 @@
 nav.navbar.navbar-expand-md {
-  ul li a.nav-link {
-    font-family: 'Open Sans', sans-serif;
-    padding: 1rem;
-    color: #aaa;
-    text-transform: uppercase;
+  #logo {
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  img {
+    height: 45px;
+    display: block;
+  }
+  // background: $dark_background;
+  padding: 0;
+
+  ul li {
+    a.dropdown-item,
+    a.nav-link {
+      font-family: 'Open Sans', sans-serif;
+      color: #777;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #333;
+        background-color: #f8f9fa;
+      }
+    }
+
+    a.nav-link {
+      padding: 1.5rem;
+
+      &.active,
+      &.show {
+        background: inherit;
+        color: $primary;
+        text-shadow: 0 0 0 $primary;
+      }
+    }
+
+    a.dropdown-item {
+      font-size: 85%;
+      padding: 1rem 1.5rem;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+      background: inherit;
+      color: $primary;
+    }
+  }
+
+  .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
   }
 }

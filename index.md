@@ -1,11 +1,6 @@
 ---
 layout: feed
-image: "/assets/defaults/logos/banner.png"
+title: The Perry Group
+image: "/assets/banners/home.jpg"
 type: feed-content
-menu:
-  header:
-    identifier: _index
-    url: "/"
-    weight: 1
-    title: The Perry Group
 ---
