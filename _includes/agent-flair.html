@@ -1,0 +1,7 @@
+<div class="agent-flair">
+  <img class="agent-image" src="/assets/defaults/agents/{{ page.agent | slugify }}.jpg"/>
+  <div class="date-name">
+    <div class="date-name-info agent-name">by <a href="/agents/{{ page.agent | slugify }}/#latest-posts" title="View all posts by {{ page.agent }}">{{ page.agent }}</a></div>
+    <time datetime="{{ page.date }}" class="date-name-info">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </div>
+</div>

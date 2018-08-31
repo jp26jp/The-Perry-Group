@@ -19,3 +19,26 @@
   left: auto;
   transform: translate3d(0%,-50%,0);
 }
+
+.feed-header {
+  #header-image img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+  }
+}
+
+.agent, .feed, .page {
+  header {
+    position: relative;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0,-50%, 0);
+    color: white;
+    left: $spacing * 3;
+    z-index: 1;
+  }
+  &.right h1 {left: auto; right: $spacing * 3}
+}

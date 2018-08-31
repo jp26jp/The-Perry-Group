@@ -1,7 +1,8 @@
-<div class="agent-flair">
-  <img class="agent-image" src="/assets/defaults/agents/{{ page.agent | slugify }}.jpg"/>
-  <div class="date-name">
-    <div class="date-name-info agent-name">by <a href="/agents/{{ page.agent | slugify }}/#latest-posts" title="View all posts by {{ page.agent }}">{{ page.agent }}</a></div>
-    <time datetime="{{ page.date }}" class="date-name-info">{{ page.date | date: "%B %-d, %Y" }}</time>
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="/assets/defaults/agents/{{include.name | slugify}}-600x600.jpg" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{include.name}}</h5>
+    <p class="card-text">{{include.description}}</p>
+    <a href="/agents/{{include.name | slugify}}/" class="btn btn-primary">Read More</a>
   </div>
 </div>

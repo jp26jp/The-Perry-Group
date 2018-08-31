@@ -5,7 +5,7 @@ layout: default
   <div id="header-image"><img src="{{ page.image }}" /></div>
   <div class="content">
     <h1>{{ page.title }}</h1>
-    {% include agent.html %}
+    {% include agent-flair.html %}
   </div>
 </header>
 
@@ -15,7 +15,7 @@ layout: default
 
   {{ content }}
 
-  {% include agent.html %}
+  {% include agent-flair.html %}
 
   {% include comments.html identifier=page.url %}
 

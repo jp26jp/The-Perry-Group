@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-<header>
+<header class="row">
   {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-  <div id="header-image"><img src="{{ page.image }}" /></div>
+  <div id="header-image">{% if page.image %}<img src="{{ page.image }}" />{% endif %}</div>
 </header>
-<div class="feed-content">
-
+<div class="feed-content row">
   <div class="clearfix section">
     <div class="split-section about-me-section">
       <h2 id="about-me">About Me</h2>
@@ -33,9 +32,7 @@ layout: default
   </div>
   {% if page.feed == true %}<div class="section">
     <h2 id="latest-posts">Latest Posts</h2>
-
     {% include feed.html agent="Michael Perry" image=true %}
-
   </div>{% endif %}
 
 </div>

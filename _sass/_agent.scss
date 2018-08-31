@@ -1,16 +1,4 @@
 .agent, .feed {
-  header {
-    position: relative;
-  }
-
-  h1 {
-    position: absolute;
-    top: 50%;
-    transform: translate3d(0,-50%, 0);
-    color: white;
-    left: $spacing * 3;
-    z-index: 1;
-  }
 
   .about-me-section {
     width: 60%;

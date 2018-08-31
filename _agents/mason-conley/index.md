@@ -1,15 +1,13 @@
 ---
-redirect_from: "/jack-perry/"
-permalink: "/agents/jack-perry/"
-title: Jack Perry
+title: Mason Conley
 layout: agent
 feed: false
-image: "/assets/defaults/agents/jack-perry-banner.jpg"
-phone: 801-953-4850
-facebook: michaeleperry123
-instagram: michaelperry123
-twitter: michaelperry123
-linkedin: michaeleperry123
+#image: "/assets/defaults/agents/mason-conley-banner.jpg"
+phone: 801-245-0729
+facebook:
+instagram:
+twitter:
+linkedin:
 date: 2018-02-20 00:17:38 +0000
 description: I got into real estate with the mission to help people out in a much
   larger way. Real Estate is such an important transaction that carries so much weight.

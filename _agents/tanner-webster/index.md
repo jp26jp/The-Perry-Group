@@ -1,11 +1,9 @@
 ---
-redirect_from: "/mason-conley/"
-permalink: "/agents/mason-conley/"
-title: Mason Conley
+title: Michael Perry
 layout: agent
-feed: false
-image: "/assets/defaults/agents/mason-conley-banner.jpg"
-phone: 801-245-0729
+feed: true
+image: "/assets/defaults/agents/michael-perry-banner.jpg"
+phone: 801-584-9998
 facebook: michaeleperry123
 instagram: michaelperry123
 twitter: michaelperry123

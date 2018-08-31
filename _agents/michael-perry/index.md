@@ -1,6 +1,4 @@
 ---
-redirect_from: "/michael-perry/"
-permalink: "/agents/michael-perry/"
 title: Michael Perry
 layout: agent
 feed: true
