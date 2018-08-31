@@ -38,6 +38,12 @@
   padding: $card-spacer-x;
 }
 
+.card-rating {
+  img {
+    width: 24px;
+  }
+}
+
 .card-title {
   margin-bottom: $card-spacer-y;
 }
@@ -60,7 +66,6 @@
     margin-left: $card-spacer-x;
   }
 }
-
 //
 // Optional textual caps
 //
@@ -91,8 +96,6 @@
     @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
   }
 }
-
-
 //
 // Header navs
 //
@@ -108,8 +111,8 @@
   margin-right: -($card-spacer-x / 2);
   margin-left: -($card-spacer-x / 2);
 }
-
 // Card image
+
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -123,8 +126,8 @@
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-radius($card-inner-border-radius);
 }
-
 // Card image caps
+
 .card-img-top {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-top-radius($card-inner-border-radius);
@@ -134,8 +137,6 @@
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-bottom-radius($card-inner-border-radius);
 }
-
-
 // Card deck
 
 .card-deck {
@@ -145,7 +146,6 @@
   .card {
     margin-bottom: $card-deck-margin;
   }
-
   @include media-breakpoint-up(sm) {
     flex-flow: row wrap;
     margin-right: -$card-deck-margin;
@@ -154,7 +154,7 @@
     .card {
       display: flex;
       // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
-      flex: 1 0 0%;
+      flex: 1 0 0;
       flex-direction: column;
       margin-right: $card-deck-margin;
       margin-bottom: 0; // Override the default
@@ -162,8 +162,6 @@
     }
   }
 }
-
-
 //
 // Card groups
 //
@@ -171,38 +169,36 @@
 .card-group {
   display: flex;
   flex-direction: column;
-
   // The child selector allows nested `.card` within `.card-group`
   // to display properly.
   > .card {
     margin-bottom: $card-group-margin;
   }
-
   @include media-breakpoint-up(sm) {
     flex-flow: row wrap;
     // The child selector allows nested `.card` within `.card-group`
     // to display properly.
     > .card {
       // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
-      flex: 1 0 0%;
+      flex: 1 0 0;
       margin-bottom: 0;
 
       + .card {
         margin-left: 0;
         border-left: 0;
       }
-
       // Handle rounded corners
       @if $enable-rounded {
         &:first-child {
           @include border-right-radius(0);
 
-          .card-img-top,
-          .card-header {
+          .card-header,
+          .card-img-top {
             border-top-right-radius: 0;
           }
-          .card-img-bottom,
-          .card-footer {
+
+          .card-footer,
+          .card-img-bottom {
             border-bottom-right-radius: 0;
           }
         }
@@ -210,12 +206,13 @@
         &:last-child {
           @include border-left-radius(0);
 
-          .card-img-top,
-          .card-header {
+          .card-header,
+          .card-img-top {
             border-top-left-radius: 0;
           }
-          .card-img-bottom,
-          .card-footer {
+
+          .card-footer,
+          .card-img-bottom {
             border-bottom-left-radius: 0;
           }
         }
@@ -223,12 +220,13 @@
         &:only-child {
           @include border-radius($card-border-radius);
 
-          .card-img-top,
-          .card-header {
+          .card-header,
+          .card-img-top {
             @include border-top-radius($card-border-radius);
           }
-          .card-img-bottom,
-          .card-footer {
+
+          .card-footer,
+          .card-img-bottom {
             @include border-bottom-radius($card-border-radius);
           }
         }
@@ -236,10 +234,10 @@
         &:not(:first-child):not(:last-child):not(:only-child) {
           @include border-radius(0);
 
-          .card-img-top,
-          .card-img-bottom,
+          .card-footer,
           .card-header,
-          .card-footer {
+          .card-img-bottom,
+          .card-img-top {
             @include border-radius(0);
           }
         }
@@ -247,8 +245,6 @@
     }
   }
 }
-
-
 //
 // Columns
 //
@@ -257,7 +253,6 @@
   .card {
     margin-bottom: $card-columns-margin;
   }
-
   @include media-breakpoint-up(sm) {
     column-count: $card-columns-count;
     column-gap: $card-columns-gap;

@@ -1,16 +1,13 @@
-.agent, .feed {
-
-  .about-me-section {
-    width: 60%;
+.agent {
+  h2 {
+    border-bottom: 1px solid #ddd;
   }
 
-  .contact-me-section {
-    width: 40%;
+  .contact-section {
+    margin: $spacing / 2 0;
+  }
 
-    .contact-section {
-      margin: $spacing / 2 0;
-    }
-
+  .social-container {
     a {
       display: block;
       line-height: $spacing / 2;

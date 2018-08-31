@@ -1,4 +1,5 @@
 - name: Michael Perry
+  image: true
   phone: 801-584-9998
   description: I grew up in Sugar House and have fallen in love with SLC. I truly believe Salt Lake City is becoming one of the top destinations in the world. This city is changing, and the culture is vibrant. Going to all of the local schools Beacon Heights/ Hillside/ Judge Memorial and then to the University I have been able to gather a sense of knowledge that most people seek out. I love this place, and I love this city. Make SLC your new home!
   facebook: michaeleperry123
@@ -7,6 +8,7 @@
   linkedin: michaeleperry123
 
 - name: Jack Perry
+  image: true
   phone: 801-953-4850
   description:
   facebook:
@@ -15,6 +17,7 @@
   linkedin:
 
 - name: Mason Conley
+  image: true
   phone: 801-953-4850
   description:
   facebook:
@@ -23,6 +26,7 @@
   linkedin:
 
 - name: Travis Clemens
+  image: true
   phone: 801-953-4850
   description: With my grandfather and uncle being real estate agents for over 30 years, I have always had a love for houses + people. Being part of the Perry Group, I have access to over 15 years of real estate experience. A little bit about me - I grew up in Pennsylvania, received my BBA in Virginia, and have been in Utah for 2 years. I love this state + city and am beyond blessed to call it my home. Give me a call or text and let me help you make Utah your new home!
   facebook:
@@ -31,6 +35,7 @@
   linkedin:
 
 - name: Tanner Webster
+  image: true
   phone: 801-953-4850
   description:
   facebook:
@@ -39,6 +44,7 @@
   linkedin:
 
 - name: Tim Leary
+  image: true
   phone: 801-953-4850
   description: Tim Leary is a high profile agent in the Salt Lake Valley and surrounding areas. Growing up in Salt Lake, and Park city, Tim exploits a large amount of knowledge about the area. He can show you and tell you the in's and out's of anything and everything you need or want to know. Working for a top producing team (The Perry Group) Tim has access to over 15 years of Real Estate experience. If you are looking for the utmost care and caution with the perfect balance of hard work and added personality, then Tim Leary is the agent for you. Please call or text with any questions you might have, and I look forward to working with you sometime in the future!
   facebook:

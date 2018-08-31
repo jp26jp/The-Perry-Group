@@ -36,6 +36,7 @@ layout: compress
     {% include json/Organization.md %}
 
     <script src="/js/script.js"></script>
+    {% if page.reviews %}<script src="/js/review.js"></script>{% endif %}
   </body>
 
 
