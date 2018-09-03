@@ -57,19 +57,21 @@ blockquote {
   background: #f8f8f8;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  a {
-    color: inherit;
+a {
+  &:not(.social) {
+    color: $primary;
     text-decoration: none;
-    border-bottom: 2px solid $primary;
-    transition: color .2s;
+
     &:hover {
-      color: $primary;
+      text-decoration: underline;
     }
   }
-}
-
-a {
-  color: $dark_font;
-  text-decoration: none;
+  &.social {
+    color: $dark_font;
+    transition: all .2s;
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 ---
-title: Michael Perry
+title: Chance Carlton
 layout: agent
 feed: true
 reviews: true
