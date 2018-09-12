@@ -11,23 +11,23 @@ sitemap:
   xmlns:media="http://search.yahoo.com/mrss/"
   >
   <channel>
-    <title>{{ site.title }}</title>
-    <description>{{ site.description }}</description>
-    <link>{{ siteURL }}</link>
-    <atom:link href="{{ siteURL }}/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ siteDate }}</pubDate>
-    <lastBuildDate>{{ siteDate }}</lastBuildDate>
+    <title>{{site.title}}</title>
+    <description>{{site.description}}</description>
+    <link>{{siteURL}}</link>
+    <atom:link href="{{siteURL}}/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>{{siteDate}}</pubDate>
+    <lastBuildDate>{{siteDate}}</lastBuildDate>
     <image>
-      <url>{{ siteURL }}/assets/defaults/logos/logo.gif</url>
-      <title>{{ site.title }}</title>
-      <link>{{ siteURL }}</link>
+      <url>{{siteURL}}/assets/defaults/logos/logo.gif</url>
+      <title>{{site.title}}</title>
+      <link>{{siteURL}}</link>
       <width>144</width>
       <height>144</height>
     </image>
 
     {% for post in site.posts %}
       <item>
-        <title>{{ post.title }}</title>
+        <title>{{post.title}}</title>
         {% assign agent = "" %}
         {% if post.agent == "Michael Perry" %}
           {% assign agent = "michael" %}
@@ -36,23 +36,23 @@ sitemap:
         {% else %}
           {% assign agent = "tim.leary" %}
         {% endif %}
-        <author>{{ agent }}@theperry.group ({{ post.agent }})</author>
-        <description>{{ post.excerpt | strip_html }}</description>
-        <media:content url="{{ siteURL }}{{ post.image | uri_escape }}" type="image/jpg"/>
+        <author>{{agent}}@theperry.group ({{post.agent}})</author>
+        <description>{{post.excerpt | strip_html}}</description>
+        <media:content url="{{siteURL}}{{post.image | uri_escape}}" type="image/jpg"/>
         <content:encoded>
           <![CDATA[
-          <img width="800" height="auto" alt="{{ post.title }}" src="{{ siteURL }}{{ post.image | uri_escape }}">
-          {{ post.content }}
+          <img width="800" height="auto" alt="{{post.title}}" src="{{siteURL}}{{post.image | uri_escape}}">
+          {{post.content}}
           ]]>
         </content:encoded>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ siteURL }}{{ post.url }}</link>
-        <guid>{{ siteURL }}{{ post.url }}</guid>
+        <pubDate>{{post.date | date_to_rfc822}}</pubDate>
+        <link>{{siteURL}}{{post.url}}</link>
+        <guid>{{siteURL}}{{post.url}}</guid>
         {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
+        <category>{{tag | xml_escape}}</category>
         {% endfor %}
         {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
+        <category>{{cat | xml_escape}}</category>
         {% endfor %}
       </item>
     {% endfor %}

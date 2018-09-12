@@ -23,10 +23,10 @@ layout: default
         <a class="social" href="mailto:{{agent.email}}" title="Email {{agent.name}}"><i class="theperrygroup-email pr-2"></i>{{agent.email}}</a>
       </div>
       <div class="social-container">
-        {% if agent.facebook %}<a class="social" href="https://www.facebook.com/{{ agent.facebook }}" target="_blank" title="Connect with {{agent.name}} on Facebook"><i class="theperrygroup-facebook"></i></a>{% endif %}
-        {% if agent.instagram %}<a class="social" href="https://www.instagram.com/{{ agent.instagram }}" target="_blank" title="Connect with {{agent.name}} on Instagram"><i class="theperrygroup-instagram"></i></a>{% endif %}
-        {% if agent.twitter %}<a class="social" href="https://www.twitter.com/{{ agent.twitter }}" target="_blank" title="Connect with {{agent.name}} on Twitter"><i class="theperrygroup-twitter"></i></a>{% endif %}
-        {% if agent.linkedin %}<a class="social" href="https://www.linkedin.com/in/{{ agent.linkedin }}" target="_blank" title="Connect with {{agent.name}} on LinkedIn"><i class="theperrygroup-linkedin"></i></a>{% endif %}
+        {% if agent.facebook %}<a class="social" href="https://www.facebook.com/{{agent.facebook}}" target="_blank" title="Connect with {{agent.name}} on Facebook"><i class="theperrygroup-facebook"></i></a>{% endif %}
+        {% if agent.instagram %}<a class="social" href="https://www.instagram.com/{{agent.instagram}}" target="_blank" title="Connect with {{agent.name}} on Instagram"><i class="theperrygroup-instagram"></i></a>{% endif %}
+        {% if agent.twitter %}<a class="social" href="https://www.twitter.com/{{agent.twitter}}" target="_blank" title="Connect with {{agent.name}} on Twitter"><i class="theperrygroup-twitter"></i></a>{% endif %}
+        {% if agent.linkedin %}<a class="social" href="https://www.linkedin.com/in/{{agent.linkedin}}" target="_blank" title="Connect with {{agent.name}} on LinkedIn"><i class="theperrygroup-linkedin"></i></a>{% endif %}
       </div>
     </div>
   </div>

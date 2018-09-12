@@ -1,7 +1,7 @@
 <div class="agent-flair pt-5 pb-5 mt-5 mb-5">
-  <img class="agent-image" src="/assets/defaults/agents/{{ page.agent | slugify }}.jpg"/>
+  <img class="agent-image" src="/assets/defaults/agents/{{page.agent | slugify}}.jpg"/>
   <div class="date-name">
-    <div class="date-name-info agent-name">by <a href="/agents/{{ page.agent | slugify }}/#latest-posts" title="View all posts by {{ page.agent }}">{{ page.agent }}</a></div>
-    <time datetime="{{ page.date }}" class="date-name-info">{{ page.date | date: "%B %-d, %Y" }}</time>
+    <div class="date-name-info agent-name">by <a href="/agents/{{page.agent | slugify}}/#latest-posts" title="View all posts by {{page.agent}}">{{page.agent}}</a></div>
+    <time datetime="{{page.date}}" class="date-name-info">{{page.date | date: "%B %-d, %Y"}}</time>
   </div>
 </div>

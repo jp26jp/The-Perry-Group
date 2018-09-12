@@ -12,7 +12,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           {% for agent in site.data.agents %}
             {% if agent.load == true %}
-              <a class="dropdown-item" href="/agents/{{ agent.name | slugify }}/">{{ agent.name }}</a>
+              <a class="dropdown-item" href="/agents/{{agent.name | slugify}}/">{{agent.name}}</a>
             {% endif %}
           {% endfor %}
           <div class="dropdown-divider"></div>

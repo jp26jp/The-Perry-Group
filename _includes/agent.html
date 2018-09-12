@@ -5,13 +5,13 @@
     </a>
     <div class="card-body">
       <h5 class="card-title mt-2 mb-3">
-        <a class="social" href="/agents/{{include.name | slugify}}" title="View {{include.name}}'s profile">{{ include.name }}</a>
+        <a class="social" href="/agents/{{include.name | slugify}}" title="View {{include.name}}'s profile">{{include.name}}</a>
       </h5>
       <div class="card-section mt-2 mb-2">
-        <a class="social" href="tel:+1{{include.phone | remove:" " | remove:"."}}" title="Text or call {{include.name}}">{{ include.phone }}</a>
+        <a class="social" href="tel:+1{{include.phone | remove:" " | remove:"."}}" title="Text or call {{include.name}}">{{include.phone}}</a>
       </div>
       <div class="card-section mt-2 mb-2">
-        <a class="social" href="mailto:{{include.email}}" title="Email {{include.name}}">{{ include.email }}</a>
+        <a class="social" href="mailto:{{include.email}}" title="Email {{include.name}}">{{include.email}}</a>
       </div>
       <div class="social-container mt-2 mb-2">
         {% if include.facebook %}<a class="social p-2" href="https://www.facebook.com/{{include.facebook}}" target="_blank" title="Connect with {{include.name}} on Facebook"><i class="theperrygroup-facebook"></i></a>{% endif %}

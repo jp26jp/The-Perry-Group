@@ -2,16 +2,16 @@
 {
   "@context":"http://schema.org",
   "@type":"RealEstateAgent",
-  "@id":"{{ siteURL }}",
-  "url":"{{ siteURL }}",
-  "name":"{{ site.title }}",
-  "legalName": "{{ site.title }}",
-  "image":"{{ siteURL }}/assets/defaults/logos/logo.png",
-  "logo":"{{ siteURL }}/assets/defaults/logos/logo.png",
+  "@id":"{{siteURL}}",
+  "url":"{{siteURL}}",
+  "name":"{{site.title}}",
+  "legalName": "{{site.title}}",
+  "image":"{{siteURL}}/assets/defaults/logos/logo.png",
+  "logo":"{{siteURL}}/assets/defaults/logos/logo.png",
   "sameAs": [
-    "https://www.facebook.com/{{ site.facebook }}",
-    "https://instagram.com/{{ site.instagram }}",
-    "https://www.twitter.com/{{ site.twitter }}"
+    "https://www.facebook.com/{{site.facebook}}",
+    "https://instagram.com/{{site.instagram}}",
+    "https://www.twitter.com/{{site.twitter}}"
   ],
   "address":{
     "@type":"PostalAddress",
@@ -26,7 +26,7 @@
     "latitude":40.7248806,
     "longitude":-111.8610703
   },
-  "telephone":"+1{{ site.phone }}",
+  "telephone":"+1{{site.phone}}",
   "parentOrganization": {
   	"@type":"RealEstateAgent",
     "@id":"http://www.kwsaltlake.com/",
