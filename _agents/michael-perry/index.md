@@ -1,7 +1,6 @@
 ---
 title: Michael Perry
 layout: agent
-feed: true
 reviews: true
 image: "/assets/defaults/agents/michael-perry-banner.jpg"
 phone: 801-584-9998

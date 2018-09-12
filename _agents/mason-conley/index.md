@@ -1,7 +1,6 @@
 ---
 title: Mason Conley
 layout: agent
-feed: false
 reviews: true
 image: "/assets/defaults/agents/mason-conley-banner.jpg"
 phone: 801-245-0729

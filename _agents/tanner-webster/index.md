@@ -1,7 +1,6 @@
 ---
 title: Tanner Webster
 layout: agent
-feed: true
 reviews: true
 image: "/assets/defaults/agents/tanner-webster-banner.jpg"
 phone: 435-632-2392

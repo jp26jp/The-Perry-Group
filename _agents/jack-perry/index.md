@@ -1,7 +1,6 @@
 ---
 title: Jack Perry
 layout: agent
-feed: false
 reviews: false
 image: "/assets/defaults/agents/jack-perry-banner.jpg"
 phone: 801-953-4850
