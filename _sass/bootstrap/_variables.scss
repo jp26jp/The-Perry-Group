@@ -123,7 +123,9 @@ $spacers: map-merge((
   2: ($spacer * .5),
   3: $spacer,
   4: ($spacer * 1.5),
-  5: ($spacer * 3)
+  5: ($spacer * 2),
+  6: ($spacer * 3),
+  7: ($spacer * 4)
 ), $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.
@@ -167,6 +169,7 @@ $paragraph-margin-bottom:   1rem !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
+  sd: 660px,
   md: 768px,
   lg: 992px,
   xl: 1200px
@@ -666,7 +669,7 @@ $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 
-$card-group-margin:                 ($grid-gutter-width / 2) !default;
+$card-group-margin:                 ($grid-gutter-width / 3) !default;
 $card-deck-margin:                  $card-group-margin !default;
 
 $card-columns-count:                4 !default;

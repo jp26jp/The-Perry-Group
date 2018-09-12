@@ -5,10 +5,6 @@ layout: default
   <h1>{{ page.title }}</h1>
   <div id="header-image"><img src="{{ page.image }}" /></div>
 </header>
-<div class="feed-content">
+<div class="row mt-5 mb-5">
   {{ content }}
-  {% if page.feed != false %}<div class="section">
-    <h2 id="latest-posts">Latest Posts</h2>
-    {% include feed.html image=true %}
-  </div>{% endif %}
 </div>

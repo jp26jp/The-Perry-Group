@@ -1,19 +1,23 @@
-<div class="col-md-4 mb-4">
+<div class="col-lg-4 col-sd-6 col-sm-12 justify-content-center mb-5">
   <div class="card">
-    <img class="card-img-top" src="/assets/defaults/agents/{{include.name | slugify}}-600x600.jpg" alt="">
+    <a href="/agents/{{include.name | slugify}}" title="View {{include.name}}'s profile">
+      <img class="card-img-top img-fluid" src="/assets/defaults/agents/{{include.name | slugify}}-600x600.jpg" alt="{{include.name}} - The Perry Group Real Estate Agent">
+    </a>
     <div class="card-body">
-      <h5 class="card-title mt-2 mb-3">{{ include.name }}</h5>
+      <h5 class="card-title mt-2 mb-3">
+        <a class="social" href="/agents/{{include.name | slugify}}" title="View {{include.name}}'s profile">{{ include.name }}</a>
+      </h5>
       <div class="card-section mt-2 mb-2">
-        {{ include.phone }}
+        <a class="social" href="tel:+1{{include.phone | remove:" " | remove:"."}}" title="Text or call {{include.name}}">{{ include.phone }}</a>
       </div>
       <div class="card-section mt-2 mb-2">
-        {{ include.email }}
+        <a class="social" href="mailto:{{include.email}}" title="Email {{include.name}}">{{ include.email }}</a>
       </div>
       <div class="social-container mt-2 mb-2">
-        {% if include.facebook %}<a class="social p-2" href="https://www.facebook.com/{{include.facebook}}" target="_blank" title="Connect with me on Facebook"><i class="theperrygroup-facebook"></i></a>{% endif %}
-        {% if include.instagram %}<a class="social p-2" href="https://www.instagram.com/{{include.instagram}}" target="_blank" title="Connect with me on Instagram"><i class="theperrygroup-instagram"></i></a>{% endif %}
-        {% if include.twitter %}<a class="social p-2" href="https://www.twitter.com/{{include.twitter}}" target="_blank" title="Connect with me on Twitter"><i class="theperrygroup-twitter"></i></a>{% endif %}
-        {% if include.linkedin %}<a class="social p-2" href="https://www.linkedin.com/in/{{include.linkedin}}" target="_blank" title="Connect with me on LinkedIn"><i class="theperrygroup-linkedin"></i></a>{% endif %}
+        {% if include.facebook %}<a class="social p-2" href="https://www.facebook.com/{{include.facebook}}" target="_blank" title="Connect with {{include.name}} on Facebook"><i class="theperrygroup-facebook"></i></a>{% endif %}
+        {% if include.instagram %}<a class="social p-2" href="https://www.instagram.com/{{include.instagram}}" target="_blank" title="Connect with {{include.name}} on Instagram"><i class="theperrygroup-instagram"></i></a>{% endif %}
+        {% if include.twitter %}<a class="social p-2" href="https://www.twitter.com/{{include.twitter}}" target="_blank" title="Connect with {{include.name}} on Twitter"><i class="theperrygroup-twitter"></i></a>{% endif %}
+        {% if include.linkedin %}<a class="social p-2" href="https://www.linkedin.com/in/{{include.linkedin}}" target="_blank" title="Connect with {{include.name}} on LinkedIn"><i class="theperrygroup-linkedin"></i></a>{% endif %}
       </div>
     </div>
   </div>

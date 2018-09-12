@@ -5,3 +5,4 @@ title_align: right
 image: "/assets/banners/home.jpg"
 type: feed-content
 ---
+{% include agents.md %}

@@ -1,4 +1,6 @@
 nav.navbar.navbar-expand-md {
+  padding: 0;
+
   #logo {
     margin-right: 0.5rem;
     margin-left: 1rem;
@@ -8,10 +10,11 @@ nav.navbar.navbar-expand-md {
     height: 45px;
     display: block;
   }
-  // background: $dark_background;
-  padding: 0;
 
   ul li {
+    a:hover {
+      text-decoration: none;
+    }
     a.dropdown-item,
     a.nav-link {
       font-family: 'Open Sans', sans-serif;
@@ -29,7 +32,7 @@ nav.navbar.navbar-expand-md {
 
       &.active,
       &.show {
-        background: inherit;
+        background-color: #f8f9fa;
         color: $primary;
         text-shadow: 0 0 0 $primary;
       }
@@ -41,9 +44,11 @@ nav.navbar.navbar-expand-md {
     }
 
     .dropdown-item.active,
+    .dropdown-item.active:hover,
+    .dropdown-item:active:hover,
     .dropdown-item:active {
-      background: inherit;
       color: $primary;
+      background-color: #f8f9fa;
     }
   }
 

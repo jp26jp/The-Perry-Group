@@ -8,4 +8,5 @@ sitemap:
 {% include js/image.js %}
 {% include js/smooth-scroll.js %}
 {% include js/scroll.js %}
+{% include js/count-up.js %}
 {% include js/custom.js %}

@@ -10,16 +10,16 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agents</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/agents/jack-perry/">Jack Perry</a>
-          <a class="dropdown-item" href="/agents/michael-perry/">Michael Perry</a>
-          <a class="dropdown-item" href="/agents/mason-conley/">Mason Conley</a>
-          <a class="dropdown-item" href="/agents/tim-leary/">Tim Leary</a>
-          <a class="dropdown-item" href="/agents/travis-clemens/">Travis Clemens</a>
+          {% for agent in site.data.agents %}
+            {% if agent.load == true %}
+              <a class="dropdown-item" href="/agents/{{ agent.name | slugify }}/">{{ agent.name }}</a>
+            {% endif %}
+          {% endfor %}
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/agents/">View All</a>
         </div>
       </li>
-      <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li> -->
     </ul>
   </div>
 </nav>

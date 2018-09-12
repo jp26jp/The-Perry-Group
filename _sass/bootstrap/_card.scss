@@ -29,6 +29,29 @@
       @include border-bottom-radius($card-border-radius);
     }
   }
+
+  .card-review {
+    a {
+      white-space: nowrap;
+    }
+  }
+
+  .img-crop-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    .card-img-top {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate3d(0,-50%,0);
+      @media screen and (max-width: 900px) {width: 140%}
+      @media screen and (max-width: 850px) {width: 150%}
+      @media screen and (max-width: 772px) {width: 120%}
+      @media screen and (max-width: 600px) {width: 130%}
+      @media screen and (max-width: 500px) {width: 150%}
+    }
+  }
 }
 
 .card-body {
@@ -37,6 +60,7 @@
   flex: 1 1 auto;
   padding: $card-spacer-x;
   text-align: center;
+
   .social-container {
     font-size: 16px;
   }
@@ -150,7 +174,10 @@
   .card {
     margin-bottom: $card-deck-margin;
   }
-  @include media-breakpoint-up(sm) {
+  .card-section {
+    white-space: nowrap;
+  }
+  @include media-breakpoint-up(mg) {
     flex-flow: row wrap;
     margin-right: -$card-deck-margin;
     margin-left: -$card-deck-margin;
@@ -166,6 +193,19 @@
     }
   }
 }
+
+// css added from: https://www.codeply.com/go/AP1MpYKY2H/bootstrap-4-card-deck-columns-per-row
+.card-custom-deck {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-custom-deck > div[class*='col-'] {
+  display: flex;
+}
+
+
+
 //
 // Card groups
 //
@@ -254,9 +294,7 @@
 //
 
 .card-columns {
-  .card {
-    margin-bottom: $card-columns-margin;
-  }
+  column-count:3;
   @include media-breakpoint-up(sm) {
     column-count: $card-columns-count;
     column-gap: $card-columns-gap;
