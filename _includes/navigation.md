@@ -11,7 +11,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agents</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           {% for agent in site.data.agents %}
-            {% if agent.load == true %}
+            {% if agent.load %}
               <a class="dropdown-item" href="/agents/{{agent.name | slugify}}/">{{agent.name}}</a>
             {% endif %}
           {% endfor %}
