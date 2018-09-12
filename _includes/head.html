@@ -31,7 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="{{site.title}}" />
 <meta property="og:url" content="{{siteURL}}{{page.url | remove:"index"}}">
-<meta property="og:title" content="{{page.title}}">
+<meta property="og:title" content="{{page.title}} - {{site.title}}">
 <meta property="og:description" content="{{page.excerpt | strip_html | truncate: 160}}">
 <meta property="og:image" content="{{siteURL}}{{page.image | uri_escape}}" />
 <meta property="fb:app_id" content="417134648700495" />
@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@{{site.twitter}}">
 <meta name="twitter:creator" content="@{{site.twitter_creator}}">
-<meta name="twitter:title" content="{{page.title}}">
+<meta name="twitter:title" content="{{page.title}} - {{site.title}}">
 <meta name="twitter:description" content="{{page.excerpt | strip_html | truncate: 200}}">
 <meta name="twitter:image" content="{{siteURL}}{{page.image | uri_escape}}" />
 
@@ -50,9 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- OneSignal -->
 {% include head/onesignal.html %}
 
-<!-- <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet">
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
 <!-- Styling -->
 <style>
