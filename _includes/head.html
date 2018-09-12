@@ -13,7 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Generic -->
 <title>{{ page.title }}</title>
 <meta name="robots" content="index,follow"/>
-<link rel="canonical" href="{{ siteURL }}{{ page.url }}">
+<link rel="canonical" href="{{ siteURL }}{{ page.url | remove:"index" }}">
 <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ siteURL }}/feed.xml" />
