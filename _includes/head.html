@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="article:publisher" content="https://www.facebook.com/603313526466904" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:url" content="{{ siteURL }}{{ page.url }}">
+<meta property="og:url" content="{{ siteURL }}{{ page.url | remove:"index" }}">
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
 <meta property="og:image" content="{{ siteURL }}{{ page.image | uri_escape }}" />
