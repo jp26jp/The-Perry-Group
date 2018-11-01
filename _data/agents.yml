@@ -58,10 +58,11 @@
   linkedin:
 
 - name: Tanner Webster
-  image: false
+  image: true
+  load: true
   phone: 435-632-2392
   email: tanner.webster@theperry.group
-  description:
+  description: After graduating from the University of Utah with a degree in Economics, I knew that real estate was the right move for me. Having the chance to help families and individuals find the home of their dreams is what I truly love doing. With access to over 20 years of experience I'm confident I can help you find the best home for you!
   zillow: tanweb9
   facebook:
   instagram:
