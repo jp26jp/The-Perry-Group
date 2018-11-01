@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:site_name" content="{{site.title}}" />
 <meta property="og:url" content="{{siteURL}}{{page.url | remove:"index"}}">
 <meta property="og:title" content="{{page.title}} - {{site.title}}">
-<meta property="og:description" content="{{page.excerpt | strip_html | truncate: 160}}">
+<meta property="og:description" content="{% if page.description %}{{page.description}}{%else%}{{page.excerpt | strip_html | truncate: 160}}{%endif%}">
 <meta property="og:image" content="{{siteURL}}{{page.image | uri_escape}}" />
 <meta property="fb:app_id" content="417134648700495" />
 <meta property="fb:admins" content="100000698423058,100006386205238,100000661230890,100023715791981"/>
@@ -42,7 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:site" content="@{{site.twitter}}">
 <meta name="twitter:creator" content="@{{site.twitter_creator}}">
 <meta name="twitter:title" content="{{page.title}} - {{site.title}}">
-<meta name="twitter:description" content="{{page.excerpt | strip_html | truncate: 200}}">
+<meta name="twitter:description" content="{% if page.description %}{{page.description}}{%else%}{{page.excerpt | strip_html | truncate: 200}}{%endif%}">
 <meta name="twitter:image" content="{{siteURL}}{{page.image | uri_escape}}" />
 
 <script>{% include js/youtube.js %}</script>
